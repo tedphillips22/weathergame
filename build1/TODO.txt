@@ -1,3 +1,4 @@
 -Display users teams
 -Build leagues Lol 
 -Build home page
+-states on city autocomplete list
