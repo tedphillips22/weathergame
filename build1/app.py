@@ -4,7 +4,7 @@ from cs50 import SQL
 from werkzeug.security import check_password_hash, generate_password_hash
 from functools import wraps
 
-#git works
+#git works really
 
 app = Flask(__name__)
 
