@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Make Team
+{% endblock %}
+
+{% block main %}
+    <form action="/maketeam" method="POST">
+        <div class="mb-3">
+            <label for="teamname">Team Name</label>
+            <input type="text" id="teamname" class="form-control mx-auto w-auto" name="teamname" required>
+            <br>
+            <label for="city1">City 1</label>
+            <input type="text" id="city1" name="city1" class="form-control mx-auto w-auto" list="cities-list" required>
+            <br>
+            <label for="city2">City 2</label>
+            <input type="text" id="city2" name="city2" class="form-control mx-auto w-auto" list="cities-list" required>
+            <br>
+            <label for="city3">City 3</label>
+            <input type="text" id="city3" name="city3" class="form-control mx-auto w-auto" list="cities-list" required>
+            <br>
+            <button type="submit">Submit</button>
+            <datalist id="cities-list">
+                {% for row in cities %}
+                <option>{{ row["city"] }}</option>
+                {% endfor %}
+            </datalist>
+        </div>
+    </form>
+{% endblock %}
