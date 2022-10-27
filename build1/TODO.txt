@@ -2,3 +2,8 @@
 -Build leagues Lol 
 -Build home page
 -Show states on autocomplete list
+-Read in weather data from API
+-team builder: autocomplete from list, but not from previous entries
+-limit API calls (Flask-Limiter?)
+-check for team name dupes 
+-secure API key in environment variables

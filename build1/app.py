@@ -1,5 +1,5 @@
 from flask import Flask, flash, redirect, render_template, request, session 
-import urllib.request, json, datetime
+import requests, json
 from flask_session import Session
 from cs50 import SQL
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -34,17 +34,16 @@ def login_required(f):
 
 APIkey = "fc554137bf63e3cc6f44bae5376883b3"
 
-def get_weather(city):
+def get_current_weather(cityid):
 
-    lat = db.execute("SELECT lat FROM cities WHERE city = ?", city)
-    lon = db.execute("SELECT lon FROM cities WHERE city = ?", city)
+    lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
+    lon = db.execute("SELECT lon FROM cities WHERE id = ?", cityid)[0]['lon']
 
     #"exclude" can change data called on api, see openweathermap documentation
-    url = "https://api.openweathermap.org/data/3.0/onecall?lat={"+str(lon)+"}={"+str(lat)+"}&exclude={minutely,hourly,alerts}&appid={"+APIkey+"}"
+    url = "https://api.open-meteo.com/v1/forecast?latitude="+str(lat)+"&longitude="+str(lon)+"&hourly=temperature_2m,apparent_temperature,precipitation,weathercode&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&past_days=0"
 
-    response = urllib.request.urlopen(url)
-    weatherdata = response.read()
-    weatherdict = json.loads(weatherdata)
+    response = requests.get(url)
+    weatherdict = response.json()
 
     return(weatherdict)
 
@@ -182,23 +181,53 @@ def myteams():
     teamidsdict = db.execute("SELECT id FROM teams WHERE userid = ?", userid)
     teamids = []
 
+    #generate list of users teamids
     counter = 0
     for row in teamidsdict:
         temp = teamidsdict[counter]
-        print(temp)
         teamidtemp = temp["id"]
-        print(teamidtemp)
         teamids.append(teamidtemp)
-        print(teamids)
         counter += 1
 
-    cityids = []
+    teamsdict = []
+
+    #generate list of all cities from all teams [{'teamid': x, 'cityid': x}, ...]
+    counter = 0
     for id in teamids:
-        cityiddict = db.execute("SELECT cityid FROM teamcities WHERE teamid = ?", teamids[id])
-        cityids.append(cityiddict["cityid"])
+        cityiddicttemp = db.execute("SELECT teamid, cityid FROM teamcities WHERE teamid = ?", teamids[counter])
+        teamsdict.append(cityiddicttemp)
+        counter += 1
+
+    
+    #convert dict of ids to names
+    citydict = []
+    teamslist = []
+    counter = 0
+    for row in teamsdict:
+        counter = 0
+        teamidtemp = row[counter]['teamid']
+        teamnametemp = db.execute("SELECT teamname FROM teams WHERE id = ?", teamidtemp)[0]['teamname']
+        teamslist.append({'teamname' : teamnametemp})
+        for item in row:
+            cityidtemp = row[counter]['cityid']
+            counter += 1                
+            citynametemp = db.execute("SELECT city FROM cities WHERE id = ?", cityidtemp)[0]['city']
+            #query weather api for data and select what we need from it
+            
+            weathertemp = get_current_weather(cityidtemp)
+            
+            temperature = weathertemp['hourly']['temperature_2m'][0]
+            feelslike = weathertemp['hourly']['apparent_temperature'][0]
+            weathercode = weathertemp['hourly']['weathercode'][0]
+
+            weatherdesc = db.execute("SELECT description FROM weathercodes WHERE code = ?", weathercode)[0]['description']
 
 
- 
-    print(cityids)
 
-    return render_template("teampage.html")
+
+            citydict.append({'teamname' : teamnametemp, 'cityname' : citynametemp, 'temperature' : temperature, 'feelslike' : feelslike, 'weatherdesc' : weatherdesc})
+            
+    
+
+
+    return render_template("teampage.html", citydict = citydict, teamslist = teamslist)

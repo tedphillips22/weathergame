@@ -9,13 +9,22 @@
         <thead>
             <tr>
                 <th>Team Name</th>
-
+                <th>City</th>
+                <th>Current Temp</th>
+                <th>Feels Like</th>
+                <th>Current Weather</th>
             </tr>
         </thead>
         <tbody>
+            {% for row in citydict %}
             <tr>
-                <td>Code for team name</td>
+                <th>{{ row['teamname'] }}</th>
+                <td>{{ row['cityname'] }}</td>
+                <td>{{ row['temperature'] }}</td>
+                <td>{{ row['feelslike'] }}</td>
+                <td>{{ row['weatherdesc'] }}</td>
             </tr>
+            {% endfor %}
         </tbody>
     </table>
 {% endblock %}
