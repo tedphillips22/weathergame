@@ -1,0 +1,1060 @@
+city,lat,lon,state,city_state,population
+Tokyo,35.6839,139.7744,Japan,"Tokyo, Japan",39105000
+Jakarta,-6.2146,106.8451,Indonesia,"Jakarta, Indonesia",35362000
+Delhi,28.6667,77.2167,India,"Delhi, India",31870000
+Manila,14.6,120.9833,Philippines,"Manila, Philippines",23971000
+Sao Paulo,-23.5504,-46.6339,Brazil,"Sao Paulo, Brazil",22495000
+Seoul,37.56,126.99,South Korea,"Seoul, South Korea",22394000
+Mumbai,19.0758,72.8775,India,"Mumbai, India",22186000
+Shanghai,31.1667,121.4667,China,"Shanghai, China",22118000
+Mexico City,19.4333,-99.1333,Mexico,"Mexico City, Mexico",21505000
+Guangzhou,23.1288,113.259,China,"Guangzhou, China",21489000
+Cairo,30.0444,31.2358,Egypt,"Cairo, Egypt",19787000
+Beijing,39.904,116.4075,China,"Beijing, China",19437000
+New York,40.6943,-73.9249,New York,"New York, New York",18713220
+Kolkata,22.5727,88.3639,India,"Kolkata, India",18698000
+Moscow,55.7558,37.6178,Russia,"Moscow, Russia",17693000
+Bangkok,13.75,100.5167,Thailand,"Bangkok, Thailand",17573000
+Dhaka,23.7289,90.3944,Bangladesh,"Dhaka, Bangladesh",16839000
+Buenos Aires,-34.5997,-58.3819,Argentina,"Buenos Aires, Argentina",16216000
+Osaka,34.752,135.4582,Japan,"Osaka, Japan",15490000
+Lagos,6.45,3.4,Nigeria,"Lagos, Nigeria",15487000
+Istanbul,41.01,28.9603,Turkey,"Istanbul, Turkey",15311000
+Karachi,24.86,67.01,Pakistan,"Karachi, Pakistan",15292000
+Kinshasa,-4.3317,15.3139,Congo (Kinshasa),"Kinshasa, Congo (Kinshasa)",15056000
+Shenzhen,22.535,114.054,China,"Shenzhen, China",14678000
+Bangalore,12.9791,77.5913,India,"Bangalore, India",13999000
+Ho Chi Minh City,10.8167,106.6333,Vietnam,"Ho Chi Minh City, Vietnam",13954000
+Tehran,35.7,51.4167,Iran,"Tehran, Iran",13819000
+Los Angeles,34.1139,-118.4068,California,"Los Angeles, California",12750807
+Rio de Janeiro,-22.9083,-43.1964,Brazil,"Rio de Janeiro, Brazil",12486000
+Chengdu,30.66,104.0633,China,"Chengdu, China",11920000
+Baoding,38.8671,115.4845,China,"Baoding, China",11860000
+Chennai,13.0825,80.275,India,"Chennai, India",11564000
+Lahore,31.5497,74.3436,Pakistan,"Lahore, Pakistan",11148000
+London,51.5072,-0.1275,United Kingdom,"London, United Kingdom",11120000
+Paris,48.8566,2.3522,France,"Paris, France",11027000
+Lima,-12.06,-77.0375,Peru,"Lima, Peru",8992000
+Zhoukou,33.625,114.6418,China,"Zhoukou, China",8953172
+Kuala Lumpur,3.1478,101.6953,Malaysia,"Kuala Lumpur, Malaysia",8639000
+Chicago,41.8373,-87.6862,Illinois,"Chicago, Illinois",8604203
+Hanoi,21.0245,105.8412,Vietnam,"Hanoi, Vietnam",8246600
+Bogota,4.6126,-74.0705,Colombia,"Bogota, Colombia",7743955
+Dar es Salaam,-6.8,39.2833,Tanzania,"Dar es Salaam, Tanzania",7461000
+Hong Kong,22.3069,114.1831,Hong Kong,"Hong Kong, Hong Kong",7398000
+Santiago,-33.45,-70.6667,Chile,"Santiago, Chile",7026000
+Miami,25.7839,-80.2102,Florida,"Miami, Florida",6445545
+Baghdad,33.35,44.4167,Iraq,"Baghdad, Iraq",6107000
+Madrid,40.4167,-3.7167,Spain,"Madrid, Spain",6006000
+Dallas,32.7936,-96.7662,Texas,"Dallas, Texas",5743938
+Philadelphia,40.0077,-75.1339,Pennsylvania,"Philadelphia, Pennsylvania",5649300
+Nairobi,-1.2864,36.8172,Kenya,"Nairobi, Kenya",5545000
+Houston,29.7863,-95.3889,Texas,"Houston, Texas",5464251
+Atlanta,33.7627,-84.4224,Georgia,"Atlanta, Georgia",5449398
+Guadalajara,20.6767,-103.3475,Mexico,"Guadalajara, Mexico",5437000
+Toronto,43.7417,-79.3733,Canada,"Toronto, Canada",5429524
+Washington,38.9047,-77.0163,District of Columbia,"Washington, District of Columbia",5379184
+Singapore,1.3,103.8,Singapore,"Singapore, Singapore",5271000
+Sydney,-33.865,151.2094,Australia,"Sydney, Australia",4840600
+Barcelona,41.3825,2.1769,Spain,"Barcelona, Spain",4735000
+Boston,42.3188,-71.0846,Massachusetts,"Boston, Massachusetts",4688346
+Melbourne,-37.8136,144.9631,Australia,"Melbourne, Australia",4529500
+Johannesburg,-26.2044,28.0416,South Africa,"Johannesburg, South Africa",4434827
+Casablanca,33.5992,-7.62,Morocco,"Casablanca, Morocco",4370000
+Kabul,34.5328,69.1658,Afghanistan,"Kabul, Afghanistan",4273156
+Phoenix,33.5722,-112.0891,Arizona,"Phoenix, Arizona",4219697
+Amman,31.95,35.9333,Jordan,"Amman, Jordan",4007526
+Seattle,47.6211,-122.3244,Washington,"Seattle, Washington",3789215
+Berlin,52.5167,13.3833,Germany,"Berlin, Germany",3664088
+San Francisco,37.7562,-122.443,California,"San Francisco, California",3592294
+Montreal,45.5089,-73.5617,Canada,"Montreal, Canada",3519595
+Detroit,42.3834,-83.1024,Michigan,"Detroit, Michigan",3506126
+Busan,35.1,129.0403,South Korea,"Busan, South Korea",3453198
+Algiers,36.7764,3.0586,Algeria,"Algiers, Algeria",3415811
+San Diego,32.8312,-117.1225,California,"San Diego, California",3220118
+Minneapolis,44.9635,-93.2678,Minnesota,"Minneapolis, Minnesota",2977172
+Tampa,27.9942,-82.4451,Florida,"Tampa, Florida",2908063
+Denver,39.7621,-104.8759,Colorado,"Denver, Colorado",2876625
+Brooklyn,40.6501,-73.9496,New York,"Brooklyn, New York",2559903
+Queens,40.7498,-73.7976,New York,"Queens, New York",2230722
+Riverside,33.9381,-117.3948,California,"Riverside, California",2107852
+Baltimore,39.3051,-76.6144,Maryland,"Baltimore, Maryland",2106068
+Las Vegas,36.2333,-115.2654,Nevada,"Las Vegas, Nevada",2104198
+Portland,45.5372,-122.65,Oregon,"Portland, Oregon",2074775
+San Antonio,29.4658,-98.5253,Texas,"San Antonio, Texas",2049293
+St. Louis,38.6358,-90.2451,Missouri,"St. Louis, Missouri",2024074
+Sacramento,38.5667,-121.4683,California,"Sacramento, California",1898019
+Orlando,28.4772,-81.3369,Florida,"Orlando, Florida",1822394
+San Jose,37.3019,-121.8486,California,"San Jose, California",1798103
+Cleveland,41.4767,-81.6804,Ohio,"Cleveland, Ohio",1710093
+Pittsburgh,40.4396,-79.9762,Pennsylvania,"Pittsburgh, Pennsylvania",1703266
+Austin,30.3004,-97.7522,Texas,"Austin, Texas",1687311
+Cincinnati,39.1413,-84.5061,Ohio,"Cincinnati, Ohio",1662691
+Kansas City,39.1239,-94.5541,Missouri,"Kansas City, Missouri",1636715
+Manhattan,40.7834,-73.9662,New York,"Manhattan, New York",1628706
+Indianapolis,39.7771,-86.1458,Indiana,"Indianapolis, Indiana",1588961
+Columbus,39.9862,-82.985,Ohio,"Columbus, Ohio",1562009
+Charlotte,35.208,-80.8304,North Carolina,"Charlotte, North Carolina",1512923
+Virginia Beach,36.7335,-76.0435,Virginia,"Virginia Beach, Virginia",1478868
+Bronx,40.8501,-73.8662,New York,"Bronx, New York",1418207
+Milwaukee,43.0642,-87.9673,Wisconsin,"Milwaukee, Wisconsin",1365787
+Providence,41.823,-71.4187,Rhode Island,"Providence, Rhode Island",1203230
+Jacksonville,30.3322,-81.6749,Florida,"Jacksonville, Florida",1181496
+Salt Lake City,40.7777,-111.9306,Utah,"Salt Lake City, Utah",1098526
+Nashville,36.1715,-86.7843,Tennessee,"Nashville, Tennessee",1081903
+Richmond,37.5295,-77.4756,Virginia,"Richmond, Virginia",1075798
+Memphis,35.1046,-89.9773,Tennessee,"Memphis, Tennessee",1066967
+Raleigh,35.8325,-78.6435,North Carolina,"Raleigh, North Carolina",1038738
+New Orleans,30.0687,-89.9288,Louisiana,"New Orleans, Louisiana",1020886
+Louisville,38.1663,-85.6485,Kentucky,"Louisville, Kentucky",1005654
+Oklahoma City,35.4676,-97.5136,Oklahoma,"Oklahoma City, Oklahoma",972943
+Bridgeport,41.1918,-73.1953,Connecticut,"Bridgeport, Connecticut",924449
+Buffalo,42.9016,-78.8487,New York,"Buffalo, New York",914341
+Fort Worth,32.7811,-97.3473,Texas,"Fort Worth, Texas",909585
+Hartford,41.7661,-72.6834,Connecticut,"Hartford, Connecticut",905152
+Tucson,32.1545,-110.8782,Arizona,"Tucson, Arizona",888486
+Omaha,41.2627,-96.0522,Nebraska,"Omaha, Nebraska",847819
+El Paso,31.8479,-106.4309,Texas,"El Paso, Texas",843386
+Honolulu,21.3294,-157.846,Hawaii,"Honolulu, Hawaii",820987
+McAllen,26.2273,-98.2471,Texas,"McAllen, Texas",804114
+Hempstead,40.6629,-73.6089,New York,"Hempstead, New York",767417
+Albuquerque,35.1053,-106.6464,New Mexico,"Albuquerque, New Mexico",761195
+Birmingham,33.5277,-86.7987,Alabama,"Birmingham, Alabama",739573
+Sarasota,27.3386,-82.5431,Florida,"Sarasota, Florida",722243
+Dayton,39.7797,-84.1998,Ohio,"Dayton, Ohio",718353
+Rochester,43.168,-77.6162,New York,"Rochester, New York",703952
+Fresno,36.7831,-119.7941,California,"Fresno, California",703498
+Allentown,40.5961,-75.4756,Pennsylvania,"Allentown, Pennsylvania",683794
+Tulsa,36.1284,-95.9042,Oklahoma,"Tulsa, Oklahoma",671033
+Cape Coral,26.6446,-81.9956,Florida,"Cape Coral, Florida",668382
+Concord,37.9722,-122.0016,California,"Concord, California",652308
+Colorado Springs,38.8674,-104.7606,Colorado,"Colorado Springs, Colorado",642413
+Charleston,32.8153,-79.9628,South Carolina,"Charleston, South Carolina",628377
+Springfield,42.1155,-72.5395,Massachusetts,"Springfield, Massachusetts",623401
+Grand Rapids,42.962,-85.6562,Michigan,"Grand Rapids, Michigan",609314
+Mission Viejo,33.6095,-117.655,California,"Mission Viejo, California",590249
+Albany,42.6664,-73.7987,New York,"Albany, New York",586383
+Knoxville,35.9692,-83.9496,Tennessee,"Knoxville, Tennessee",586048
+Bakersfield,35.3529,-119.0359,California,"Bakersfield, California",579295
+Ogden,41.2278,-111.9682,Utah,"Ogden, Utah",578523
+Baton Rouge,30.4418,-91.131,Louisiana,"Baton Rouge, Louisiana",570308
+Akron,41.0798,-81.5219,Ohio,"Akron, Ohio",565208
+New Haven,41.3112,-72.9246,Connecticut,"New Haven, Connecticut",564830
+Columbia,34.0376,-80.9037,South Carolina,"Columbia, South Carolina",560041
+Mesa,33.4017,-111.718,Arizona,"Mesa, Arizona",518012
+Palm Bay,27.955,-80.6627,Florida,"Palm Bay, Florida",507002
+Provo,40.2457,-111.6457,Utah,"Provo, Utah",500617
+Worcester,42.2705,-71.8079,Massachusetts,"Worcester, Massachusetts",498328
+Murrieta,33.572,-117.1909,California,"Murrieta, California",496046
+Greenville,34.8353,-82.3647,South Carolina,"Greenville, South Carolina",484465
+Brookhaven,40.8321,-72.9518,New York,"Brookhaven, New York",483546
+Wichita,37.6896,-97.3442,Kansas,"Wichita, Kansas",482249
+Toledo,41.6639,-83.5822,Ohio,"Toledo, Ohio",482111
+Staten Island,40.5834,-74.1496,New York,"Staten Island, New York",476143
+Des Moines,41.5725,-93.6105,Iowa,"Des Moines, Iowa",473957
+Long Beach,33.7981,-118.1675,California,"Long Beach, California",462628
+Port St. Lucie,27.2796,-80.3883,Florida,"Port St. Lucie, Florida",461152
+Denton,33.2176,-97.1419,Texas,"Denton, Texas",457177
+Madison,43.0826,-89.3931,Wisconsin,"Madison, Wisconsin",447245
+Reno,39.5497,-119.8483,Nevada,"Reno, Nevada",445020
+Harrisburg,40.2752,-76.8843,Pennsylvania,"Harrisburg, Pennsylvania",442289
+Little Rock,34.7256,-92.3576,Arkansas,"Little Rock, Arkansas",439815
+Oakland,37.7903,-122.2165,California,"Oakland, California",433031
+Durham,35.9794,-78.9031,North Carolina,"Durham, North Carolina",424700
+Winston-Salem,36.1029,-80.2611,North Carolina,"Winston-Salem, North Carolina",422269
+Bonita Springs,26.3559,-81.7861,Florida,"Bonita Springs, Florida",421291
+Indio,33.7346,-116.2346,California,"Indio, California",417059
+Palm Coast,29.5392,-81.246,Florida,"Palm Coast, Florida",417007
+Chattanooga,35.0657,-85.2488,Tennessee,"Chattanooga, Tennessee",415501
+Spokane,47.6671,-117.433,Washington,"Spokane, Washington",412275
+Syracuse,43.0409,-76.1438,New York,"Syracuse, New York",404223
+Lancaster,40.0421,-76.3012,Pennsylvania,"Lancaster, Pennsylvania",401524
+Arlington,32.6998,-97.125,Texas,"Arlington, Texas",398854
+Stockton,37.9765,-121.3109,California,"Stockton, California",397264
+Poughkeepsie,41.6949,-73.921,New York,"Poughkeepsie, New York",394760
+Augusta,33.3645,-82.0708,Georgia,"Augusta, Georgia",390809
+Boise,43.6007,-116.2312,Idaho,"Boise, Idaho",389280
+Oxnard,34.1963,-119.1815,California,"Oxnard, California",387647
+Scranton,41.4044,-75.6649,Pennsylvania,"Scranton, Pennsylvania",384250
+Modesto,37.6374,-121.0028,California,"Modesto, California",383134
+Kissimmee,28.3042,-81.4164,Florida,"Kissimmee, Florida",382720
+Aurora,39.7087,-104.7273,Colorado,"Aurora, Colorado",379289
+Youngstown,41.0993,-80.6463,Ohio,"Youngstown, Ohio",378732
+Fayetteville,36.0713,-94.166,Arkansas,"Fayetteville, Arkansas",351246
+Anaheim,33.839,-117.8572,California,"Anaheim, California",350365
+Pensacola,30.4427,-87.1886,Florida,"Pensacola, Florida",346921
+Victorville,34.5277,-117.3536,California,"Victorville, California",346789
+Lancaster,34.6935,-118.1753,California,"Lancaster, California",343304
+Greensboro,36.0956,-79.8269,North Carolina,"Greensboro, North Carolina",343090
+Corpus Christi,27.726,-97.3755,Texas,"Corpus Christi, Texas",342464
+Fort Wayne,41.0886,-85.1437,Indiana,"Fort Wayne, Indiana",334122
+Santa Ana,33.7366,-117.8819,California,"Santa Ana, California",332318
+Flint,43.0235,-83.6922,Michigan,"Flint, Michigan",332190
+Islip,40.7384,-73.1887,New York,"Islip, New York",331499
+Fayetteville,35.0846,-78.9776,North Carolina,"Fayetteville, North Carolina",327435
+Jackson,32.3163,-90.2124,Mississippi,"Jackson, Mississippi",325350
+Santa Rosa,38.4458,-122.7067,California,"Santa Rosa, California",324634
+Lansing,42.7142,-84.5601,Michigan,"Lansing, Michigan",324286
+Lexington,38.0423,-84.4587,Kentucky,"Lexington, Kentucky",323152
+Ann Arbor,42.2755,-83.7312,Michigan,"Ann Arbor, Michigan",322267
+Henderson,36.0133,-115.038,Nevada,"Henderson, Nevada",320189
+Huntsville,34.6988,-86.6412,Alabama,"Huntsville, Alabama",319249
+Mobile,30.6783,-88.1162,Alabama,"Mobile, Alabama",315502
+Fort Collins,40.5478,-105.0656,Colorado,"Fort Collins, Colorado",312666
+Asheville,35.5704,-82.5536,North Carolina,"Asheville, North Carolina",312507
+Santa Clarita,34.4175,-118.4964,California,"Santa Clarita, California",312446
+St. Paul,44.9477,-93.104,Minnesota,"St. Paul, Minnesota",308096
+Antioch,37.9789,-121.7958,California,"Antioch, California",302419
+Lakeland,28.0556,-81.9545,Florida,"Lakeland, Florida",302284
+Oyster Bay,40.7845,-73.5139,New York,"Oyster Bay, New York",297822
+Trenton,40.2236,-74.7641,New Jersey,"Trenton, New Jersey",290716
+Lincoln,40.809,-96.6788,Nebraska,"Lincoln, Nebraska",289490
+Springfield,37.1943,-93.2916,Missouri,"Springfield, Missouri",288090
+Anchorage,61.1508,-149.1091,Alaska,"Anchorage, Alaska",288000
+Plano,33.0502,-96.7487,Texas,"Plano, Texas",287677
+Irvine,33.6772,-117.7738,California,"Irvine, California",287401
+Davenport,41.5563,-90.6052,Iowa,"Davenport, Iowa",285362
+Rockford,42.2597,-89.0641,Illinois,"Rockford, Illinois",282762
+Newark,40.7245,-74.1725,New Jersey,"Newark, New Jersey",282011
+South Bend,41.6767,-86.2696,Indiana,"South Bend, Indiana",280498
+Shreveport,32.4656,-93.7956,Louisiana,"Shreveport, Louisiana",280062
+Round Lake Beach,42.379,-88.0811,Illinois,"Round Lake Beach, Illinois",279381
+Savannah,32.0281,-81.1784,Georgia,"Savannah, Georgia",276295
+Myrtle Beach,33.7096,-78.8843,South Carolina,"Myrtle Beach, South Carolina",275579
+Chula Vista,32.6281,-117.0145,California,"Chula Vista, California",274492
+Eugene,44.0563,-123.1173,Oregon,"Eugene, Oregon",273439
+Canton,40.8075,-81.3677,Ohio,"Canton, Ohio",269418
+Lubbock,33.5659,-101.8878,Texas,"Lubbock, Texas",267648
+Reading,40.34,-75.9267,Pennsylvania,"Reading, Pennsylvania",267155
+Winter Haven,28.0118,-81.7017,Florida,"Winter Haven, Florida",267069
+Salem,44.9231,-123.0246,Oregon,"Salem, Oregon",266804
+St. Petersburg,27.7931,-82.6652,Florida,"St. Petersburg, Florida",265351
+Lafayette,30.2084,-92.0323,Louisiana,"Lafayette, Louisiana",264357
+Laredo,27.5629,-99.4875,Texas,"Laredo, Texas",262491
+Jersey City,40.7161,-74.0682,New Jersey,"Jersey City, New Jersey",262075
+Concord,35.3933,-80.6366,North Carolina,"Concord, North Carolina",261801
+Columbus,32.51,-84.8771,Georgia,"Columbus, Georgia",261445
+Chandler,33.2826,-111.8516,Arizona,"Chandler, Arizona",261165
+McKinney,33.2015,-96.6669,Texas,"McKinney, Texas",258277
+Scottsdale,33.6872,-111.8651,Arizona,"Scottsdale, Arizona",258069
+Killeen,31.0754,-97.7296,Texas,"Killeen, Texas",258009
+Tallahassee,30.4551,-84.2526,Florida,"Tallahassee, Florida",257601
+Peoria,40.752,-89.6153,Illinois,"Peoria, Illinois",256286
+Wilmington,34.21,-77.8866,North Carolina,"Wilmington, North Carolina",255616
+Montgomery,32.3473,-86.2666,Alabama,"Montgomery, Alabama",254634
+Gilbert,33.3101,-111.7463,Arizona,"Gilbert, Arizona",254114
+Glendale,33.5791,-112.2311,Arizona,"Glendale, Arizona",252381
+North Las Vegas,36.288,-115.0901,Nevada,"North Las Vegas, Nevada",251974
+Chesapeake,36.6778,-76.3024,Virginia,"Chesapeake, Virginia",244835
+Barnstable,41.6722,-70.3599,Massachusetts,"Barnstable, Massachusetts",242847
+Norfolk,36.8945,-76.259,Virginia,"Norfolk, Virginia",242742
+Fremont,37.5265,-121.9852,California,"Fremont, California",241110
+Kennewick,46.1978,-119.1732,Washington,"Kennewick, Washington",240735
+Garland,32.91,-96.6305,Texas,"Garland, Texas",239928
+Irving,32.8584,-96.9702,Texas,"Irving, Texas",239798
+Visalia,36.3276,-119.3269,California,"Visalia, California",237386
+Atlantic City,39.3797,-74.4527,New Jersey,"Atlantic City, New Jersey",237054
+Paradise,36.0807,-115.1369,Nevada,"Paradise, Nevada",235087
+Nashua,42.7491,-71.491,New Hampshire,"Nashua, New Hampshire",233917
+Arlington,38.8786,-77.1011,Virginia,"Arlington, Virginia",233464
+Hialeah,25.8696,-80.3046,Florida,"Hialeah, Florida",233339
+York,39.9651,-76.7315,Pennsylvania,"York, Pennsylvania",233184
+North Hempstead,40.7912,-73.6688,New York,"North Hempstead, New York",230531
+Evansville,37.9881,-87.5341,Indiana,"Evansville, Indiana",230427
+Avondale,33.3858,-112.3236,Arizona,"Avondale, Arizona",227289
+Brownsville,25.998,-97.4565,Texas,"Brownsville, Texas",227239
+Gulfport,30.4271,-89.0703,Mississippi,"Gulfport, Mississippi",220987
+Appleton,44.2779,-88.3891,Wisconsin,"Appleton, Wisconsin",220570
+Bremerton,47.5436,-122.7122,Washington,"Bremerton, Washington",218400
+Hickory,35.7425,-81.323,North Carolina,"Hickory, North Carolina",218323
+Tacoma,47.2431,-122.4531,Washington,"Tacoma, Washington",217827
+San Bernardino,34.1417,-117.2946,California,"San Bernardino, California",215784
+College Station,30.5852,-96.296,Texas,"College Station, Texas",215243
+Kalamazoo,42.2749,-85.5882,Michigan,"Kalamazoo, Michigan",215193
+Thousand Oaks,34.1914,-118.8755,California,"Thousand Oaks, California",215029
+Roanoke,37.2785,-79.958,Virginia,"Roanoke, Virginia",214674
+Fontana,34.0968,-117.4599,California,"Fontana, California",214547
+Moreno Valley,33.9244,-117.2045,California,"Moreno Valley, California",213055
+Babylon,40.6924,-73.3585,New York,"Babylon, New York",211207
+North Port,27.0577,-82.1975,Florida,"North Port, Florida",209070
+Fargo,46.8652,-96.8292,North Dakota,"Fargo, North Dakota",208675
+Green Bay,44.515,-87.9896,Wisconsin,"Green Bay, Wisconsin",207557
+Spring Valley,36.0987,-115.2619,Nevada,"Spring Valley, Nevada",207127
+Amarillo,35.1988,-101.8311,Texas,"Amarillo, Texas",205603
+Portland,43.6773,-70.2715,Maine,"Portland, Maine",203969
+Santa Barbara,34.4285,-119.7202,California,"Santa Barbara, California",202401
+Gainesville,29.6804,-82.3458,Florida,"Gainesville, Florida",202335
+Huntington,40.8522,-73.3824,New York,"Huntington, New York",201718
+Olympia,47.0417,-122.8959,Washington,"Olympia, Washington",200915
+Frisco,33.1555,-96.8215,Texas,"Frisco, Texas",200490
+Yonkers,40.9466,-73.8674,New York,"Yonkers, New York",200370
+Norwich,41.5495,-72.0882,Connecticut,"Norwich, Connecticut",200289
+Glendale,34.1818,-118.2468,California,"Glendale, California",199303
+Huntington Beach,33.696,-118.0025,California,"Huntington Beach, California",199223
+Deltona,28.905,-81.2137,Florida,"Deltona, Florida",198361
+Aurora,41.7637,-88.2901,Illinois,"Aurora, Illinois",197757
+Tempe,33.3881,-111.9318,Arizona,"Tempe, Arizona",195805
+Overland Park,38.887,-94.687,Kansas,"Overland Park, Kansas",195494
+Grand Prairie,32.6872,-97.0209,Texas,"Grand Prairie, Texas",194543
+Sunrise Manor,36.1785,-115.049,Nevada,"Sunrise Manor, Nevada",193781
+Waco,31.5598,-97.1881,Texas,"Waco, Texas",192315
+Salinas,36.6884,-121.6317,California,"Salinas, California",190972
+Waterbury,41.5583,-73.0361,Connecticut,"Waterbury, Connecticut",189614
+Clarksville,36.5695,-87.342,Tennessee,"Clarksville, Tennessee",188746
+Cedar Rapids,41.9665,-91.6782,Iowa,"Cedar Rapids, Iowa",188038
+Sioux Falls,43.5397,-96.732,South Dakota,"Sioux Falls, South Dakota",187239
+Huntington,38.4109,-82.4344,West Virginia,"Huntington, West Virginia",186034
+Ontario,34.0393,-117.6064,California,"Ontario, California",185010
+Hagerstown,39.6401,-77.7217,Maryland,"Hagerstown, Maryland",184755
+Erie,42.1168,-80.0733,Pennsylvania,"Erie, Pennsylvania",184484
+Vancouver,45.6366,-122.5967,Washington,"Vancouver, Washington",184463
+Nampa,43.5845,-116.5631,Idaho,"Nampa, Idaho",184428
+Spartanburg,34.9437,-81.9257,South Carolina,"Spartanburg, South Carolina",182701
+Gastonia,35.2494,-81.1853,North Carolina,"Gastonia, North Carolina",182581
+Fort Lauderdale,26.1412,-80.1464,Florida,"Fort Lauderdale, Florida",182437
+Lorain,41.4409,-82.184,Ohio,"Lorain, Ohio",180279
+Murfreesboro,35.8492,-86.4119,Tennessee,"Murfreesboro, Tennessee",179951
+High Point,35.9907,-79.9938,North Carolina,"High Point, North Carolina",179913
+Newport News,37.1051,-76.5185,Virginia,"Newport News, Virginia",179225
+Rancho Cucamonga,34.1248,-117.5666,California,"Rancho Cucamonga, California",177603
+Hemet,33.7341,-116.9969,California,"Hemet, California",177253
+Santa Cruz,36.9789,-122.0346,California,"Santa Cruz, California",176428
+Danbury,41.4016,-73.471,Connecticut,"Danbury, Connecticut",176030
+Peoria,33.7844,-112.2989,Arizona,"Peoria, Arizona",175961
+Oceanside,33.2247,-117.3083,California,"Oceanside, California",175742
+Elk Grove,38.416,-121.3842,California,"Elk Grove, California",174775
+Pembroke Pines,26.0128,-80.3382,Florida,"Pembroke Pines, Florida",173591
+Vallejo,38.1133,-122.2358,California,"Vallejo, California",173256
+Garden Grove,33.7787,-117.9601,California,"Garden Grove, California",171644
+Enterprise,36.0164,-115.2208,Nevada,"Enterprise, Nevada",171108
+Medford,42.3372,-122.8537,Oregon,"Medford, Oregon",170876
+Cary,35.782,-78.8191,North Carolina,"Cary, North Carolina",170282
+Marysville,48.0809,-122.1561,Washington,"Marysville, Washington",170009
+Corona,33.8616,-117.5649,California,"Corona, California",169868
+Ocala,29.178,-82.1511,Florida,"Ocala, Florida",169383
+Fredericksburg,38.2992,-77.4872,Virginia,"Fredericksburg, Virginia",168909
+Gainesville,34.2903,-83.8301,Georgia,"Gainesville, Georgia",167371
+Manchester,42.9848,-71.4447,New Hampshire,"Manchester, New Hampshire",162877
+Champaign,40.1144,-88.2735,Illinois,"Champaign, Illinois",159443
+Alexandria,38.8185,-77.0861,Virginia,"Alexandria, Virginia",159428
+Hayward,37.6328,-122.0772,California,"Hayward, California",159203
+Springfield,39.771,-89.6538,Illinois,"Springfield, Illinois",158509
+Lakewood,39.6977,-105.1168,Colorado,"Lakewood, Colorado",157935
+Lafayette,40.399,-86.8594,Indiana,"Lafayette, Indiana",157820
+Frederick,39.4336,-77.4141,Maryland,"Frederick, Maryland",156787
+Lake Charles,30.2012,-93.2122,Louisiana,"Lake Charles, Louisiana",156181
+Odessa,31.8831,-102.3406,Texas,"Odessa, Texas",155998
+Tuscaloosa,33.2348,-87.5267,Alabama,"Tuscaloosa, Alabama",155499
+Warner Robins,32.597,-83.6529,Georgia,"Warner Robins, Georgia",155140
+Palmdale,34.5944,-118.1057,California,"Palmdale, California",155079
+Hollywood,26.0294,-80.1679,Florida,"Hollywood, Florida",154817
+Midland,32.0249,-102.1137,Texas,"Midland, Texas",154793
+Leesburg,28.7657,-81.8996,Florida,"Leesburg, Florida",154574
+Port Arthur,29.8554,-93.9264,Texas,"Port Arthur, Texas",154468
+Muskegon,43.2281,-86.2563,Michigan,"Muskegon, Michigan",153565
+Macon,32.8065,-83.6974,Georgia,"Macon, Georgia",153159
+Kansas City,39.1234,-94.7443,Kansas,"Kansas City, Kansas",152960
+Sunnyvale,37.3836,-122.0256,California,"Sunnyvale, California",152703
+Pomona,34.0585,-117.7626,California,"Pomona, California",151691
+Escondido,33.1347,-117.0722,California,"Escondido, California",151625
+Pasadena,29.6583,-95.1499,Texas,"Pasadena, Texas",151227
+New Bedford,41.6697,-70.9428,Massachusetts,"New Bedford, Massachusetts",149910
+Fairfield,38.2592,-122.0324,California,"Fairfield, California",148683
+Naperville,41.7483,-88.1657,Illinois,"Naperville, Illinois",148449
+Bellevue,47.5951,-122.1535,Washington,"Bellevue, Washington",148164
+Binghamton,42.1014,-75.9093,New York,"Binghamton, New York",148145
+Elkhart,41.6916,-85.9628,Indiana,"Elkhart, Indiana",147567
+Topeka,39.0346,-95.6955,Kansas,"Topeka, Kansas",147458
+Joliet,41.5189,-88.1499,Illinois,"Joliet, Illinois",147344
+Beaumont,30.0849,-94.1451,Texas,"Beaumont, Texas",146091
+Paterson,40.9147,-74.1624,New Jersey,"Paterson, New Jersey",145233
+Merced,37.3057,-120.4778,California,"Merced, California",145149
+Pueblo,38.2705,-104.6112,Colorado,"Pueblo, Colorado",143932
+Tyler,32.3184,-95.3062,Texas,"Tyler, Texas",143796
+Torrance,33.8346,-118.3417,California,"Torrance, California",143592
+Yuma,32.5992,-114.5488,Arizona,"Yuma, Arizona",142847
+Metairie,29.9977,-90.178,Louisiana,"Metairie, Louisiana",142135
+Surprise,33.68,-112.4524,Arizona,"Surprise, Arizona",141664
+Columbia,38.9478,-92.3256,Missouri,"Columbia, Missouri",141645
+Athens,33.9508,-83.3689,Georgia,"Athens, Georgia",141532
+Roseville,38.7703,-121.3196,California,"Roseville, California",141500
+Thornton,39.9197,-104.9438,Colorado,"Thornton, Colorado",141464
+Miramar,25.9773,-80.3351,Florida,"Miramar, Florida",141191
+Pasadena,34.1597,-118.139,California,"Pasadena, California",141029
+Mesquite,32.7623,-96.5889,Texas,"Mesquite, Texas",140937
+Olathe,38.8832,-94.8198,Kansas,"Olathe, Kansas",140545
+Santa Maria,34.9334,-120.4432,California,"Santa Maria, California",140545
+Houma,29.5799,-90.7058,Louisiana,"Houma, Louisiana",140469
+Carrollton,32.989,-96.8999,Texas,"Carrollton, Texas",139248
+Grand Junction,39.0876,-108.5673,Colorado,"Grand Junction, Colorado",139143
+Charleston,38.3484,-81.6323,West Virginia,"Charleston, West Virginia",138706
+Orange,33.8038,-117.8218,California,"Orange, California",138669
+Fullerton,33.8841,-117.9279,California,"Fullerton, California",138632
+Greeley,40.4151,-104.7706,Colorado,"Greeley, Colorado",137810
+Las Cruces,32.3265,-106.7892,New Mexico,"Las Cruces, New Mexico",136254
+Panama City,30.1995,-85.6004,Florida,"Panama City, Florida",136133
+Harlingen,26.1917,-97.6976,Texas,"Harlingen, Texas",136037
+Ramapo,41.1404,-74.1072,New York,"Ramapo, New York",135560
+West Valley City,40.6889,-112.0115,Utah,"West Valley City, Utah",135248
+Hampton,37.0551,-76.363,Virginia,"Hampton, Virginia",134510
+Warren,42.4934,-83.027,Michigan,"Warren, Michigan",133943
+Mauldin,34.7849,-82.3005,South Carolina,"Mauldin, South Carolina",133872
+Bloomington,40.4757,-88.9703,Illinois,"Bloomington, Illinois",133846
+Coral Springs,26.2702,-80.2591,Florida,"Coral Springs, Florida",133759
+Round Rock,30.5254,-97.666,Texas,"Round Rock, Texas",133372
+Yakima,46.5923,-120.5496,Washington,"Yakima, Washington",133191
+Sterling Heights,42.5809,-83.0305,Michigan,"Sterling Heights, Michigan",132438
+Kent,47.3887,-122.2129,Washington,"Kent, Washington",132319
+Burlington,36.0758,-79.4686,North Carolina,"Burlington, North Carolina",131043
+Bellingham,48.7543,-122.4687,Washington,"Bellingham, Washington",130641
+Santa Clara,37.3645,-121.968,California,"Santa Clara, California",130365
+Racine,42.7274,-87.8135,Wisconsin,"Racine, Wisconsin",130142
+Greenville,35.5956,-77.3768,North Carolina,"Greenville, North Carolina",130118
+Stamford,41.1035,-73.5583,Connecticut,"Stamford, Connecticut",129638
+Elizabeth,40.6657,-74.1912,New Jersey,"Elizabeth, New Jersey",129216
+Johnson City,36.3406,-82.3803,Tennessee,"Johnson City, Tennessee",127571
+Lynchburg,37.4003,-79.1909,Virginia,"Lynchburg, Virginia",126814
+Simi Valley,34.2663,-118.749,California,"Simi Valley, California",126589
+Amherst,43.0117,-78.7569,New York,"Amherst, New York",125509
+Fort Smith,35.3493,-94.3695,Arkansas,"Fort Smith, Arkansas",125354
+Kenosha,42.5864,-87.8765,Wisconsin,"Kenosha, Wisconsin",124972
+Norman,35.2335,-97.3471,Oklahoma,"Norman, Oklahoma",124880
+South Lyon,42.4614,-83.6526,Michigan,"South Lyon, Michigan",124694
+Boulder,40.0249,-105.2523,Colorado,"Boulder, Colorado",124345
+Abilene,32.4543,-99.7384,Texas,"Abilene, Texas",123420
+Lehigh Acres,26.612,-81.6388,Florida,"Lehigh Acres, Florida",123378
+Pearland,29.5585,-95.3215,Texas,"Pearland, Texas",122460
+Berkeley,37.8723,-122.276,California,"Berkeley, California",121363
+Richardson,32.9717,-96.7093,Texas,"Richardson, Texas",121323
+Redding,40.5698,-122.365,California,"Redding, California",121313
+Arvada,39.8321,-105.1511,Colorado,"Arvada, Colorado",121272
+East Los Angeles,34.0326,-118.1691,California,"East Los Angeles, California",121187
+St. George,37.077,-113.577,Utah,"St. George, Utah",120899
+Billings,45.7891,-108.5524,Montana,"Billings, Montana",120728
+Yuba City,39.1357,-121.6381,California,"Yuba City, California",120456
+Rochester,44.0151,-92.4778,Minnesota,"Rochester, Minnesota",119942
+Leominster,42.5209,-71.7717,Massachusetts,"Leominster, Massachusetts",119690
+Kingsport,36.5224,-82.5453,Tennessee,"Kingsport, Tennessee",119666
+Duluth,46.7756,-92.1392,Minnesota,"Duluth, Minnesota",119476
+Rock Hill,34.9416,-81.0244,South Carolina,"Rock Hill, South Carolina",119105
+Gilroy,37.0047,-121.5855,California,"Gilroy, California",118993
+Cambridge,42.3759,-71.1185,Massachusetts,"Cambridge, Massachusetts",118927
+Sugar Land,29.5935,-95.6357,Texas,"Sugar Land, Texas",118488
+Texas City,29.4128,-94.9658,Texas,"Texas City, Texas",118169
+Iowa City,41.6559,-91.5303,Iowa,"Iowa City, Iowa",118041
+Saginaw,43.4199,-83.9501,Michigan,"Saginaw, Michigan",117958
+Chico,39.7575,-121.8152,California,"Chico, California",117668
+Dover,39.161,-75.5203,Delaware,"Dover, Delaware",117282
+Clearwater,27.9789,-82.7622,Florida,"Clearwater, Florida",116946
+Coeur d'Alene,47.7041,-116.7935,Idaho,"Coeur d'Alene, Idaho",116834
+Seaside,36.6224,-121.8191,California,"Seaside, California",116720
+Independence,39.0871,-94.3501,Missouri,"Independence, Missouri",116672
+Smithtown,40.8662,-73.2164,New York,"Smithtown, New York",116669
+West Jordan,40.6024,-112.0008,Utah,"West Jordan, Utah",116480
+Brandon,27.9367,-82.3,Florida,"Brandon, Florida",115911
+Bloomington,39.1637,-86.5257,Indiana,"Bloomington, Indiana",115884
+El Monte,34.0739,-118.0291,California,"El Monte, California",115487
+North Charleston,32.9066,-80.0722,South Carolina,"North Charleston, South Carolina",115382
+Carlsbad,33.1247,-117.2837,California,"Carlsbad, California",115382
+St. Cloud,45.5339,-94.1718,Minnesota,"St. Cloud, Minnesota",115028
+Temecula,33.4928,-117.1315,California,"Temecula, California",114761
+Clovis,36.8278,-119.6831,California,"Clovis, California",114584
+Meridian,43.6112,-116.3968,Idaho,"Meridian, Idaho",114161
+The Woodlands,30.1738,-95.5134,Texas,"The Woodlands, Texas",113819
+Westminster,39.8837,-105.0624,Colorado,"Westminster, Colorado",113166
+Costa Mesa,33.6667,-117.9135,California,"Costa Mesa, California",113003
+Monroe,32.5183,-92.0774,Louisiana,"Monroe, Louisiana",112891
+Utica,43.0961,-75.226,New York,"Utica, New York",112650
+Pompano Beach,26.2428,-80.1312,Florida,"Pompano Beach, Florida",112118
+West Palm Beach,26.7468,-80.1316,Florida,"West Palm Beach, Florida",111955
+Waterloo,42.492,-92.3522,Iowa,"Waterloo, Iowa",111631
+Everett,47.9525,-122.1669,Washington,"Everett, Washington",111475
+El Centro,32.7867,-115.5586,California,"El Centro, California",111425
+Santa Fe,35.6619,-105.9819,New Mexico,"Santa Fe, New Mexico",111269
+Downey,33.9379,-118.1312,California,"Downey, California",111126
+Spring Hill,28.4797,-82.53,Florida,"Spring Hill, Florida",111076
+Lowell,42.6389,-71.3217,Massachusetts,"Lowell, Massachusetts",110997
+Centennial,39.5926,-104.8674,Colorado,"Centennial, Colorado",110937
+Elgin,42.0385,-88.3229,Illinois,"Elgin, Illinois",110849
+Richmond,37.9477,-122.339,California,"Richmond, California",110567
+Broken Arrow,36.0365,-95.7809,Oklahoma,"Broken Arrow, Oklahoma",110198
+Miami Gardens,25.9433,-80.2426,Florida,"Miami Gardens, Florida",110001
+Bend,44.0562,-121.3087,Oregon,"Bend, Oregon",109802
+Burlington,44.4877,-73.2314,Vermont,"Burlington, Vermont",109763
+Jurupa Valley,34.001,-117.4705,California,"Jurupa Valley, California",109527
+Sandy Springs,33.9366,-84.3703,Georgia,"Sandy Springs, Georgia",109452
+Gresham,45.5023,-122.4413,Oregon,"Gresham, Oregon",109381
+Lewisville,33.0452,-96.9823,Texas,"Lewisville, Texas",109212
+Hillsboro,45.5272,-122.9361,Oregon,"Hillsboro, Oregon",109128
+San Buenaventura,34.2741,-119.2314,California,"San Buenaventura, California",109106
+Jacksonville,34.7288,-77.3941,North Carolina,"Jacksonville, North Carolina",108856
+Pottstown,40.2507,-75.6444,Pennsylvania,"Pottstown, Pennsylvania",108758
+Inglewood,33.9566,-118.3444,California,"Inglewood, California",108151
+League City,29.4873,-95.1087,Texas,"League City, Texas",107536
+Eau Claire,44.8199,-91.4949,Wisconsin,"Eau Claire, Wisconsin",107404
+Turlock,37.5053,-120.8588,California,"Turlock, California",107317
+Temple,31.1076,-97.3894,Texas,"Temple, Texas",107258
+Sioux City,42.4959,-96.3901,Iowa,"Sioux City, Iowa",106455
+Salisbury,38.3756,-75.5867,Maryland,"Salisbury, Maryland",106447
+Davie,26.0789,-80.287,Florida,"Davie, Florida",106306
+Daly City,37.6862,-122.4685,California,"Daly City, California",106280
+Highlands Ranch,39.5419,-104.9708,Colorado,"Highlands Ranch, Colorado",105631
+Allen,33.1088,-96.6735,Texas,"Allen, Texas",105623
+West Covina,34.0555,-117.9112,California,"West Covina, California",105101
+Sparks,39.5729,-119.7157,Nevada,"Sparks, Nevada",105006
+Wichita Falls,33.9072,-98.5291,Texas,"Wichita Falls, Texas",104683
+San Mateo,37.5521,-122.3122,California,"San Mateo, California",104430
+Columbia,39.2004,-76.859,Maryland,"Columbia, Maryland",103991
+Norwalk,33.9069,-118.0829,California,"Norwalk, California",103949
+Rialto,34.1174,-117.3894,California,"Rialto, California",103526
+Manteca,37.7927,-121.2264,California,"Manteca, California",103420
+Arden-Arcade,38.6034,-121.381,California,"Arden-Arcade, California",102864
+El Cajon,32.8017,-116.9605,California,"El Cajon, California",102708
+Burbank,34.1879,-118.3235,California,"Burbank, California",102511
+Longmont,40.1686,-105.1005,Colorado,"Longmont, Colorado",102474
+Lakewood,40.0763,-74.2031,New Jersey,"Lakewood, New Jersey",102466
+Renton,47.4784,-122.1919,Washington,"Renton, Washington",101751
+Vista,33.1896,-117.2386,California,"Vista, California",101638
+Logan,41.74,-111.8419,Utah,"Logan, Utah",101616
+Prescott Valley,34.5983,-112.3176,Arizona,"Prescott Valley, Arizona",101539
+Vacaville,38.359,-121.968,California,"Vacaville, California",101444
+Edinburg,26.3197,-98.1596,Texas,"Edinburg, Texas",101170
+Carmel,39.965,-86.146,Indiana,"Carmel, Indiana",101068
+Spokane Valley,47.6626,-117.2346,Washington,"Spokane Valley, Washington",101060
+San Angelo,31.4424,-100.4506,Texas,"San Angelo, Texas",101004
+La Crosse,43.824,-91.2268,Wisconsin,"La Crosse, Wisconsin",100693
+Edison,40.536,-74.3697,New Jersey,"Edison, New Jersey",100447
+Idaho Falls,43.4872,-112.0362,Idaho,"Idaho Falls, Idaho",100442
+Holland,42.7677,-86.0985,Michigan,"Holland, Michigan",100432
+Charlottesville,38.0375,-78.4855,Virginia,"Charlottesville, Virginia",100416
+Longview,32.5193,-94.7621,Texas,"Longview, Texas",100330
+Woodbridge,40.5611,-74.2943,New Jersey,"Woodbridge, New Jersey",100089
+Tracy,37.7269,-121.4522,California,"Tracy, California",100049
+Boca Raton,26.3752,-80.108,Florida,"Boca Raton, Florida",99805
+Lafayette,39.9949,-105.0997,Colorado,"Lafayette, Colorado",99645
+Lee's Summit,38.9172,-94.3816,Missouri,"Lee's Summit, Missouri",99357
+Rio Rancho,35.2872,-106.6981,New Mexico,"Rio Rancho, New Mexico",99178
+South Fulton,33.6269,-84.5802,Georgia,"South Fulton, Georgia",99155
+Beaverton,45.4779,-122.8168,Oregon,"Beaverton, Oregon",99037
+Lawrence,38.9597,-95.2641,Kansas,"Lawrence, Kansas",98648
+Bismarck,46.8144,-100.7694,North Dakota,"Bismarck, North Dakota",98345
+Orem,40.2983,-111.6992,Utah,"Orem, Utah",97828
+Middletown,39.5032,-84.366,Ohio,"Middletown, Ohio",97730
+San Tan Valley,33.1879,-111.5472,Arizona,"San Tan Valley, Arizona",96692
+San Marcos,33.135,-117.1744,California,"San Marcos, California",96664
+Sandy,40.571,-111.8505,Utah,"Sandy, Utah",96380
+Federal Way,47.3091,-122.3358,Washington,"Federal Way, Washington",96289
+Greece,43.2461,-77.6989,New York,"Greece, New York",95988
+Mandeville,30.3751,-90.0904,Louisiana,"Mandeville, Louisiana",95968
+Hesperia,34.3975,-117.3147,California,"Hesperia, California",95750
+Brockton,42.0821,-71.0242,Massachusetts,"Brockton, Massachusetts",95708
+Compton,33.893,-118.2275,California,"Compton, California",95605
+Riverview,27.8227,-82.3023,Florida,"Riverview, Florida",95338
+Fishers,39.9589,-85.9661,Indiana,"Fishers, Indiana",95310
+Sunrise,26.1547,-80.2997,Florida,"Sunrise, Florida",95166
+Bowling Green,36.9719,-86.4373,Kentucky,"Bowling Green, Kentucky",95135
+Roswell,34.0391,-84.3513,Georgia,"Roswell, Georgia",94763
+Menifee,33.6909,-117.1849,California,"Menifee, California",94756
+Plantation,26.126,-80.2617,Florida,"Plantation, Florida",94580
+Dover,43.1887,-70.8845,New Hampshire,"Dover, New Hampshire",94563
+Quincy,42.2516,-71.0183,Massachusetts,"Quincy, Massachusetts",94470
+Portsmouth,36.8468,-76.354,Virginia,"Portsmouth, Virginia",94398
+Chino,33.9836,-117.6654,California,"Chino, California",94371
+Lynn,42.4779,-70.9663,Massachusetts,"Lynn, Massachusetts",94299
+Edmond,35.6689,-97.4159,Oklahoma,"Edmond, Oklahoma",94054
+Hanford,36.3274,-119.6549,California,"Hanford, California",94028
+Dearborn,42.3127,-83.2129,Michigan,"Dearborn, Michigan",93932
+Livonia,42.3972,-83.3733,Michigan,"Livonia, Michigan",93665
+South Gate,33.9448,-118.1926,California,"South Gate, California",93444
+Vineland,39.4653,-74.9981,New Jersey,"Vineland, New Jersey",93239
+Florence,34.1781,-79.7877,South Carolina,"Florence, South Carolina",93131
+Portsmouth,43.058,-70.7826,New Hampshire,"Portsmouth, New Hampshire",93069
+Slidell,30.2881,-89.7826,Louisiana,"Slidell, Louisiana",93040
+Lawton,34.6176,-98.4203,Oklahoma,"Lawton, Oklahoma",93025
+Kirkland,47.6974,-122.2054,Washington,"Kirkland, Washington",93010
+Missoula,46.875,-114.0214,Montana,"Missoula, Montana",92895
+Auburn,32.6087,-85.4899,Alabama,"Auburn, Alabama",92777
+Rapid City,44.0716,-103.2204,South Dakota,"Rapid City, South Dakota",92664
+Terre Haute,39.4654,-87.3763,Indiana,"Terre Haute, Indiana",92490
+Toms River,39.9895,-74.1654,New Jersey,"Toms River, New Jersey",92325
+Suffolk,36.6953,-76.6398,Virginia,"Suffolk, Virginia",92108
+Blacksburg,37.23,-80.4279,Virginia,"Blacksburg, Virginia",91888
+Mount Pleasant,32.8538,-79.8204,South Carolina,"Mount Pleasant, South Carolina",91684
+Carson,33.8374,-118.2559,California,"Carson, California",91394
+Greenburgh,41.033,-73.8413,New York,"Greenburgh, New York",91382
+Conroe,30.3239,-95.4825,Texas,"Conroe, Texas",91079
+Alafaya,28.5278,-81.1865,Florida,"Alafaya, Florida",91068
+Livermore,37.6862,-121.7608,California,"Livermore, California",90923
+Westminster,33.7523,-117.9938,California,"Westminster, California",90643
+Germantown,39.1755,-77.2643,Maryland,"Germantown, Maryland",90582
+Santa Monica,34.0232,-118.4813,California,"Santa Monica, California",90401
+New Braunfels,29.6994,-98.1148,Texas,"New Braunfels, Texas",90209
+Fall River,41.7137,-71.1014,Massachusetts,"Fall River, Massachusetts",89541
+Albany,31.5776,-84.1762,Georgia,"Albany, Georgia",89217
+Miami Beach,25.8171,-80.1396,Florida,"Miami Beach, Florida",88885
+Norwalk,41.1144,-73.4215,Connecticut,"Norwalk, Connecticut",88816
+San Leandro,37.7071,-122.1601,California,"San Leandro, California",88815
+O'Fallon,38.785,-90.7175,Missouri,"O'Fallon, Missouri",88673
+Newton,42.3316,-71.2085,Massachusetts,"Newton, Massachusetts",88414
+Muncie,40.1989,-85.395,Indiana,"Muncie, Indiana",87879
+Citrus Heights,38.6948,-121.288,California,"Citrus Heights, California",87796
+State College,40.7909,-77.8568,Pennsylvania,"State College, Pennsylvania",87723
+Hamilton,40.2046,-74.6765,New Jersey,"Hamilton, New Jersey",87424
+Town 'n' Country,28.0108,-82.576,Florida,"Town 'n' Country, Florida",87338
+Decatur,39.8556,-88.9337,Illinois,"Decatur, Illinois",87236
+Jackson,42.2431,-84.4037,Michigan,"Jackson, Michigan",87110
+Fort Myers,26.6195,-81.8303,Florida,"Fort Myers, Florida",87103
+Goodyear,33.2613,-112.3622,Arizona,"Goodyear, Arizona",86840
+Dalton,34.769,-84.9712,Georgia,"Dalton, Georgia",86628
+Clarkstown,41.1319,-73.966,New York,"Clarkstown, New York",86488
+Cheektowaga,42.9082,-78.7466,New York,"Cheektowaga, New York",86477
+Bryan,30.6657,-96.3668,Texas,"Bryan, Texas",86276
+Waukegan,42.3697,-87.8716,Illinois,"Waukegan, Illinois",86075
+Hawthorne,33.9146,-118.3476,California,"Hawthorne, California",86068
+Anderson,40.0891,-85.6893,Indiana,"Anderson, Indiana",85992
+Redwood City,37.5026,-122.2252,California,"Redwood City, California",85925
+Hoover,33.3754,-86.8064,Alabama,"Hoover, Alabama",85768
+Lake Forest,33.6606,-117.6712,California,"Lake Forest, California",85531
+Napa,38.2976,-122.3011,California,"Napa, California",85239
+Whittier,33.9678,-118.0188,California,"Whittier, California",85098
+Clifton,40.8631,-74.1575,New Jersey,"Clifton, New Jersey",85052
+Largo,27.9088,-82.7711,Florida,"Largo, Florida",84948
+Bloomington,44.8306,-93.3151,Minnesota,"Bloomington, Minnesota",84943
+Johns Creek,34.0333,-84.2027,Georgia,"Johns Creek, Georgia",84579
+Newport Beach,33.6151,-117.8669,California,"Newport Beach, California",84534
+Mission,26.2041,-98.3251,Texas,"Mission, Texas",84331
+Milpitas,37.4339,-121.8921,California,"Milpitas, California",84196
+Troy,42.5818,-83.1457,Michigan,"Troy, Michigan",84092
+Madera,36.9631,-120.0782,California,"Madera, California",84086
+Joplin,37.0758,-94.5018,Missouri,"Joplin, Missouri",84048
+Chino Hills,33.9508,-117.7253,California,"Chino Hills, California",83853
+Alhambra,34.084,-118.1355,California,"Alhambra, California",83750
+Franklin,35.9216,-86.8525,Tennessee,"Franklin, Tennessee",83097
+Melbourne,28.1085,-80.6627,Florida,"Melbourne, Florida",83029
+Port Huron,42.9822,-82.4387,Michigan,"Port Huron, Michigan",82970
+Upper Darby,39.949,-75.2892,Pennsylvania,"Upper Darby, Pennsylvania",82887
+Colonie,42.7396,-73.7874,New York,"Colonie, New York",82849
+Springfield,39.9297,-83.7957,Ohio,"Springfield, Ohio",82820
+Mountain View,37.4,-122.0796,California,"Mountain View, California",82739
+Zephyrhills,28.2408,-82.1796,Florida,"Zephyrhills, Florida",82476
+St. Augustine,29.8977,-81.31,Florida,"St. Augustine, Florida",82180
+Flagstaff,35.1872,-111.6195,Arizona,"Flagstaff, Arizona",81974
+Buena Park,33.8572,-118.0046,California,"Buena Park, California",81788
+Pleasanton,37.6663,-121.8805,California,"Pleasanton, California",81777
+Silver Spring,39.0028,-77.0207,Maryland,"Silver Spring, Maryland",81773
+Atascocita,29.9777,-95.1953,Texas,"Atascocita, Texas",81557
+Westland,42.3192,-83.3805,Michigan,"Westland, Michigan",81511
+Auburn,47.3039,-122.2108,Washington,"Auburn, Washington",81464
+Cranston,41.7658,-71.4857,Rhode Island,"Cranston, Rhode Island",81456
+Somerville,42.3908,-71.1013,Massachusetts,"Somerville, Massachusetts",81360
+Folsom,38.6668,-121.1422,California,"Folsom, California",81328
+Springdale,36.1899,-94.1574,Arkansas,"Springdale, Arkansas",81125
+Deerfield Beach,26.305,-80.1277,Florida,"Deerfield Beach, Florida",81066
+Warwick,41.7062,-71.4334,Rhode Island,"Warwick, Rhode Island",81004
+Cicero,41.8445,-87.7593,Illinois,"Cicero, Illinois",80796
+Farmington Hills,42.486,-83.3771,Michigan,"Farmington Hills, Michigan",80612
+Newark,40.0705,-82.4251,Ohio,"Newark, Ohio",80451
+Williamsburg,37.2692,-76.7076,Virginia,"Williamsburg, Virginia",80441
+Brooklyn Park,45.1112,-93.3505,Minnesota,"Brooklyn Park, Minnesota",80389
+Hattiesburg,31.3074,-89.317,Mississippi,"Hattiesburg, Mississippi",80138
+Alexandria,31.2923,-92.4702,Louisiana,"Alexandria, Louisiana",80129
+Lawrence,42.7003,-71.1626,Massachusetts,"Lawrence, Massachusetts",80028
+Florence,34.8303,-87.6654,Alabama,"Florence, Alabama",79964
+Valdosta,30.8502,-83.2788,Georgia,"Valdosta, Georgia",79820
+Plymouth,45.0225,-93.4618,Minnesota,"Plymouth, Minnesota",79768
+Buckeye,33.4314,-112.6429,Arizona,"Buckeye, Arizona",79620
+Georgetown,30.6668,-97.6953,Texas,"Georgetown, Texas",79604
+Cheyenne,41.1351,-104.79,Wyoming,"Cheyenne, Wyoming",79484
+Cedar Park,30.5106,-97.8196,Texas,"Cedar Park, Texas",79462
+The Villages,28.9021,-81.9888,Florida,"The Villages, Florida",79372
+Kokomo,40.464,-86.1277,Indiana,"Kokomo, Indiana",79351
+Tustin,33.7309,-117.8106,California,"Tustin, California",79348
+Lakewood,33.8471,-118.1221,California,"Lakewood, California",79307
+Perris,33.7899,-117.2233,California,"Perris, California",79291
+St. Joseph,39.7599,-94.821,Missouri,"St. Joseph, Missouri",79161
+Flower Mound,33.0344,-97.1146,Texas,"Flower Mound, Texas",79135
+Pharr,26.1685,-98.1904,Texas,"Pharr, Texas",79112
+Pine Hills,28.5818,-81.4693,Florida,"Pine Hills, Florida",78995
+Alton,38.9034,-90.1523,Illinois,"Alton, Illinois",78905
+Loveland,40.4166,-105.0623,Colorado,"Loveland, Colorado",78877
+Boynton Beach,26.5281,-80.0811,Florida,"Boynton Beach, Florida",78679
+New Rochelle,40.9305,-73.7836,New York,"New Rochelle, New York",78557
+Anderson,34.5211,-82.6479,South Carolina,"Anderson, South Carolina",78512
+Jonesboro,35.8212,-90.6791,Arkansas,"Jonesboro, Arkansas",78394
+Lebanon,40.3412,-76.4227,Pennsylvania,"Lebanon, Pennsylvania",78302
+Parma,41.3843,-81.7286,Ohio,"Parma, Ohio",78103
+Layton,41.0769,-111.9621,Utah,"Layton, Utah",78014
+Elizabethtown,37.703,-85.877,Kentucky,"Elizabethtown, Kentucky",78002
+Texarkana,33.4487,-94.0815,Texas,"Texarkana, Texas",77964
+Alameda,37.767,-122.2672,California,"Alameda, California",77624
+Kankakee,41.1019,-87.8643,Illinois,"Kankakee, Illinois",77429
+Watsonville,36.9206,-121.7706,California,"Watsonville, California",77352
+Porterville,36.0644,-119.0338,California,"Porterville, California",77318
+Baytown,29.7586,-94.9669,Texas,"Baytown, Texas",77192
+Upland,34.1178,-117.6603,California,"Upland, California",77140
+Davis,38.5552,-121.7365,California,"Davis, California",76997
+Camarillo,34.223,-119.0322,California,"Camarillo, California",76931
+South Jordan,40.557,-111.9782,Utah,"South Jordan, Utah",76598
+Battle Creek,42.2986,-85.2296,Michigan,"Battle Creek, Michigan",76514
+Bellflower,33.888,-118.1271,California,"Bellflower, California",76435
+San Marcos,29.8736,-97.9381,Texas,"San Marcos, Texas",76218
+San Ramon,37.7625,-121.9365,California,"San Ramon, California",75995
+Lake Jackson,29.0516,-95.4522,Texas,"Lake Jackson, Texas",75860
+Bethlehem,40.6266,-75.3679,Pennsylvania,"Bethlehem, Pennsylvania",75815
+Wyoming,42.8909,-85.7066,Michigan,"Wyoming, Michigan",75667
+Oshkosh,44.0228,-88.5619,Wisconsin,"Oshkosh, Wisconsin",75536
+Hammond,41.6169,-87.491,Indiana,"Hammond, Indiana",75522
+Waldorf,38.6085,-76.9195,Maryland,"Waldorf, Maryland",75489
+Missouri City,29.563,-95.5365,Texas,"Missouri City, Texas",75457
+Pasco,46.2506,-119.1304,Washington,"Pasco, Washington",75432
+Wheeling,40.0752,-80.6951,West Virginia,"Wheeling, West Virginia",75392
+Brick,40.06,-74.1099,New Jersey,"Brick, New Jersey",75342
+Kendall,25.6697,-80.3556,Florida,"Kendall, Florida",75312
+Baldwin Park,34.0829,-117.9721,California,"Baldwin Park, California",75251
+Rancho Cordova,38.574,-121.2523,California,"Rancho Cordova, California",75087
+Conway,35.0754,-92.4694,Arkansas,"Conway, Arkansas",74951
+Gary,41.5906,-87.3472,Indiana,"Gary, Indiana",74879
+Altoona,40.5082,-78.4007,Pennsylvania,"Altoona, Pennsylvania",74829
+Lodi,38.1218,-121.2932,California,"Lodi, California",74773
+Arlington Heights,42.0955,-87.9825,Illinois,"Arlington Heights, Illinois",74760
+Bolingbrook,41.6903,-88.1019,Illinois,"Bolingbrook, Illinois",74545
+Rochester Hills,42.6645,-83.1563,Michigan,"Rochester Hills, Michigan",74516
+Winchester,39.1735,-78.1746,Virginia,"Winchester, Virginia",74417
+Framingham,42.3085,-71.4368,Massachusetts,"Framingham, Massachusetts",74416
+Hilton Head Island,32.1896,-80.7499,South Carolina,"Hilton Head Island, South Carolina",74139
+Centreville,38.8391,-77.4388,Virginia,"Centreville, Virginia",74125
+Union City,37.603,-122.0187,California,"Union City, California",74107
+Owensboro,37.7574,-87.1173,Kentucky,"Owensboro, Kentucky",74068
+Jackson,35.6535,-88.8353,Tennessee,"Jackson, Tennessee",74065
+Cleveland,35.1817,-84.8707,Tennessee,"Cleveland, Tennessee",73596
+Wausau,44.962,-89.6459,Wisconsin,"Wausau, Wisconsin",73593
+Camden,39.9362,-75.1073,New Jersey,"Camden, New Jersey",73562
+Anniston,33.6712,-85.8136,Alabama,"Anniston, Alabama",73501
+Evanston,42.0463,-87.6942,Illinois,"Evanston, Illinois",73473
+Apple Valley,34.5328,-117.2104,California,"Apple Valley, California",73453
+Mansfield,40.7656,-82.5275,Ohio,"Mansfield, Ohio",73326
+Schaumburg,42.0307,-88.0838,Illinois,"Schaumburg, Illinois",72887
+Pocatello,42.8724,-112.4646,Idaho,"Pocatello, Idaho",72878
+Woodbury,44.9056,-92.923,Minnesota,"Woodbury, Minnesota",72828
+Southfield,42.4765,-83.2605,Michigan,"Southfield, Michigan",72689
+Ellicott City,39.2773,-76.8344,Maryland,"Ellicott City, Maryland",72665
+Dale City,38.6473,-77.3459,Virginia,"Dale City, Virginia",72627
+Maple Grove,45.1089,-93.4626,Minnesota,"Maple Grove, Minnesota",72622
+Pittsburg,38.0182,-121.8964,California,"Pittsburg, California",72588
+New Britain,41.6758,-72.7862,Connecticut,"New Britain, Connecticut",72495
+Morgantown,39.638,-79.9468,West Virginia,"Morgantown, West Virginia",72458
+Mansfield,32.569,-97.1211,Texas,"Mansfield, Texas",72419
+Hammond,30.5061,-90.4563,Louisiana,"Hammond, Louisiana",72413
+Dothan,31.2335,-85.4069,Alabama,"Dothan, Alabama",72396
+Harrisonburg,38.4361,-78.8735,Virginia,"Harrisonburg, Virginia",72386
+Wenatchee,47.4356,-120.3283,Washington,"Wenatchee, Washington",72350
+Waukesha,43.0087,-88.2464,Wisconsin,"Waukesha, Wisconsin",72299
+Pawtucket,41.8744,-71.3743,Rhode Island,"Pawtucket, Rhode Island",72117
+Redmond,47.6762,-122.1169,Washington,"Redmond, Washington",71929
+Lauderhill,26.1605,-80.2242,Florida,"Lauderhill, Florida",71868
+Sumter,33.9392,-80.393,South Carolina,"Sumter, South Carolina",71518
+Redlands,34.0511,-117.1712,California,"Redlands, California",71513
+Daphne,30.6286,-87.8866,Alabama,"Daphne, Alabama",71484
+Mount Vernon,48.4202,-122.3115,Washington,"Mount Vernon, Washington",71422
+Weston,26.1006,-80.4054,Florida,"Weston, Florida",71166
+St. Charles,38.7954,-90.5157,Missouri,"St. Charles, Missouri",71028
+Cherry Hill,39.9034,-74.9947,New Jersey,"Cherry Hill, New Jersey",70965
+Janesville,42.6855,-89.0136,Wisconsin,"Janesville, Wisconsin",70755
+Sherman,33.6274,-96.6218,Texas,"Sherman, Texas",70704
+North Richland Hills,32.8605,-97.218,Texas,"North Richland Hills, Texas",70670
+Broomfield,39.9541,-105.0527,Colorado,"Broomfield, Colorado",70465
+El Paso de Robles,35.6394,-120.656,California,"El Paso de Robles, California",70248
+Bristol,36.5572,-82.2154,Tennessee,"Bristol, Tennessee",70243
+Wilmington,39.7415,-75.5413,Delaware,"Wilmington, Delaware",70166
+Casas Adobes,32.3423,-111.0114,Arizona,"Casas Adobes, Arizona",70166
+Walnut Creek,37.9024,-122.0398,California,"Walnut Creek, California",70166
+Poinciana,28.1217,-81.482,Florida,"Poinciana, Florida",69955
+Lynwood,33.924,-118.2017,California,"Lynwood, California",69887
+Glen Burnie,39.1559,-76.6072,Maryland,"Glen Burnie, Maryland",69872
+Lehi,40.4136,-111.8726,Utah,"Lehi, Utah",69724
+Passaic,40.8574,-74.1282,New Jersey,"Passaic, New Jersey",69703
+Homestead,25.4665,-80.4472,Florida,"Homestead, Florida",69523
+West Bend,43.4184,-88.1824,Wisconsin,"West Bend, Wisconsin",69504
+Delray Beach,26.455,-80.0905,Florida,"Delray Beach, Florida",69451
+Sheboygan,43.7403,-87.7316,Wisconsin,"Sheboygan, Wisconsin",69393
+Lake Elsinore,33.6847,-117.3344,California,"Lake Elsinore, California",69283
+Daytona Beach,29.1994,-81.0982,Florida,"Daytona Beach, Florida",69186
+Los Lunas,34.8115,-106.7803,New Mexico,"Los Lunas, New Mexico",69020
+Lima,40.741,-84.1121,Ohio,"Lima, Ohio",68878
+Decatur,34.573,-86.9906,Alabama,"Decatur, Alabama",68867
+Rocklin,38.8075,-121.2488,California,"Rocklin, California",68823
+Rogers,36.3172,-94.1526,Arkansas,"Rogers, Arkansas",68669
+Castle Rock,39.3763,-104.8535,Colorado,"Castle Rock, Colorado",68484
+Hanover,39.8117,-76.9835,Pennsylvania,"Hanover, Pennsylvania",68165
+Bossier City,32.5227,-93.6666,Louisiana,"Bossier City, Louisiana",68159
+Dubuque,42.5008,-90.7067,Iowa,"Dubuque, Iowa",68109
+Rockville,39.0834,-77.1552,Maryland,"Rockville, Maryland",68079
+Victoria,28.8285,-96.985,Texas,"Victoria, Texas",68078
+Saratoga Springs,43.0674,-73.7775,New York,"Saratoga Springs, New York",68028
+Gaithersburg,39.1346,-77.2132,Maryland,"Gaithersburg, Maryland",67985
+Union City,40.7674,-74.0323,New Jersey,"Union City, New Jersey",67982
+Ames,42.0259,-93.6215,Iowa,"Ames, Iowa",67910
+West Des Moines,41.5522,-93.7805,Iowa,"West Des Moines, Iowa",67899
+South San Francisco,37.6536,-122.4197,California,"South San Francisco, California",67789
+Yorba Linda,33.889,-117.7714,California,"Yorba Linda, California",67644
+Casper,42.842,-106.3207,Wyoming,"Casper, Wyoming",67598
+Palatine,42.1181,-88.043,Illinois,"Palatine, Illinois",67482
+Corvallis,44.5697,-123.278,Oregon,"Corvallis, Oregon",67467
+Ankeny,41.7285,-93.6033,Iowa,"Ankeny, Iowa",67355
+Mount Vernon,40.9136,-73.8291,New York,"Mount Vernon, New York",67345
+Rowlett,32.9157,-96.5488,Texas,"Rowlett, Texas",67339
+Lakeville,44.6774,-93.252,Minnesota,"Lakeville, Minnesota",67317
+Alpharetta,34.0704,-84.2739,Georgia,"Alpharetta, Georgia",67213
+Longview,46.1461,-122.9629,Washington,"Longview, Washington",67081
+DeKalb,41.9313,-88.7482,Illinois,"DeKalb, Illinois",66959
+Petaluma,38.2423,-122.6267,California,"Petaluma, California",66929
+Redondo Beach,33.8574,-118.3766,California,"Redondo Beach, California",66749
+Tamarac,26.2056,-80.2542,Florida,"Tamarac, Florida",66721
+Laguna Niguel,33.5275,-117.705,California,"Laguna Niguel, California",66385
+Eagan,44.8169,-93.1638,Minnesota,"Eagan, Minnesota",66372
+Kenner,30.0109,-90.2549,Louisiana,"Kenner, Louisiana",66340
+Bay City,43.5903,-83.8886,Michigan,"Bay City, Michigan",66107
+North Little Rock,34.7808,-92.2371,Arkansas,"North Little Rock, Arkansas",65903
+Sammamish,47.6017,-122.0416,Washington,"Sammamish, Washington",65892
+Shawnee,39.0158,-94.8076,Kansas,"Shawnee, Kansas",65807
+Jupiter,26.9199,-80.1128,Florida,"Jupiter, Florida",65791
+Old Bridge,40.4004,-74.3126,New Jersey,"Old Bridge, New Jersey",65782
+Doral,25.8151,-80.3565,Florida,"Doral, Florida",65741
+Florence-Graham,33.9682,-118.2447,California,"Florence-Graham, California",65716
+Carbondale,37.7221,-89.2238,Illinois,"Carbondale, Illinois",65671
+Blaine,45.1696,-93.2077,Minnesota,"Blaine, Minnesota",65607
+Weirton,40.406,-80.5671,West Virginia,"Weirton, West Virginia",65578
+Franklin,40.4759,-74.5515,New Jersey,"Franklin, New Jersey",65554
+Tulare,36.1996,-119.34,California,"Tulare, California",65496
+Wellington,26.6461,-80.2699,Florida,"Wellington, Florida",65398
+Pflugerville,30.452,-97.6022,Texas,"Pflugerville, Texas",65380
+Palo Alto,37.3913,-122.1468,California,"Palo Alto, California",65364
+Middletown,40.3893,-74.082,New Jersey,"Middletown, New Jersey",65336
+Schenectady,42.8025,-73.9276,New York,"Schenectady, New York",65273
+Great Falls,47.5022,-111.2995,Montana,"Great Falls, Montana",65131
+Michigan City,41.7099,-86.8705,Indiana,"Michigan City, Indiana",65058
+Bayonne,40.6661,-74.1141,New Jersey,"Bayonne, New Jersey",64897
+Eden Prairie,44.8488,-93.4595,Minnesota,"Eden Prairie, Minnesota",64893
+Port Orange,29.1084,-81.0137,Florida,"Port Orange, Florida",64842
+Dublin,37.7161,-121.8963,California,"Dublin, California",64826
+Grand Forks,47.9218,-97.0886,North Dakota,"Grand Forks, North Dakota",64748
+Noblesville,40.0354,-86.0042,Indiana,"Noblesville, Indiana",64668
+San Clemente,33.4498,-117.6103,California,"San Clemente, California",64558
+Brentwood,37.9355,-121.7191,California,"Brentwood, California",64474
+Carmichael,38.6337,-121.323,California,"Carmichael, California",64454
+East Orange,40.7651,-74.2117,New Jersey,"East Orange, New Jersey",64367
+Eastvale,33.9617,-117.5802,California,"Eastvale, California",64157
+Chapel Hill,35.927,-79.0391,North Carolina,"Chapel Hill, North Carolina",64051
+Rocky Mount,35.9676,-77.8048,North Carolina,"Rocky Mount, North Carolina",64018
+Haverhill,42.7838,-71.0871,Massachusetts,"Haverhill, Massachusetts",64014
+Beloit,42.523,-89.0184,Wisconsin,"Beloit, Wisconsin",63762
+Gloucester,39.7924,-75.0363,New Jersey,"Gloucester, New Jersey",63705
+Glens Falls,43.3109,-73.6459,New York,"Glens Falls, New York",63499
+Brentwood,40.7839,-73.2522,New York,"Brentwood, New York",63399
+Fairbanks,64.8353,-147.6534,Alaska,"Fairbanks, Alaska",63245
+Springfield,44.0538,-122.981,Oregon,"Springfield, Oregon",63230
+Bethesda,38.9866,-77.1188,Maryland,"Bethesda, Maryland",63195
+Johnstown,40.3258,-78.9193,Pennsylvania,"Johnstown, Pennsylvania",63141
+West Hartford,41.7669,-72.7536,Connecticut,"West Hartford, Connecticut",63063
+Dundalk,39.2703,-76.4942,Maryland,"Dundalk, Maryland",63015
+Castro Valley,37.7091,-122.0631,California,"Castro Valley, California",63013
+Coon Rapids,45.1755,-93.3095,Minnesota,"Coon Rapids, Minnesota",62998
+Elmira,42.0938,-76.8097,New York,"Elmira, New York",62989
+Mankato,44.1712,-93.9773,Minnesota,"Mankato, Minnesota",62889
+Albany,44.6274,-123.0966,Oregon,"Albany, Oregon",62880
+North Miami,25.9007,-80.1686,Florida,"North Miami, Florida",62822
+Encinitas,33.049,-117.2613,California,"Encinitas, California",62709
+Skokie,42.0359,-87.74,Illinois,"Skokie, Illinois",62700
+Leander,30.5728,-97.8618,Texas,"Leander, Texas",62608
+Greenwich,41.0665,-73.6368,Connecticut,"Greenwich, Connecticut",62587
+Parkersburg,39.2624,-81.542,West Virginia,"Parkersburg, West Virginia",62566
+Waltham,42.3889,-71.2423,Massachusetts,"Waltham, Massachusetts",62495
+Port Charlotte,26.9918,-82.114,Florida,"Port Charlotte, Florida",62327
+Palm Harbor,28.0847,-82.7481,Florida,"Palm Harbor, Florida",62310
+San Luis Obispo,35.2669,-120.6691,California,"San Luis Obispo, California",62290
+Sebring,27.477,-81.453,Florida,"Sebring, Florida",62250
+Council Bluffs,41.2369,-95.8517,Iowa,"Council Bluffs, Iowa",62166
+Hamilton,39.3938,-84.5653,Ohio,"Hamilton, Ohio",62082
+Moore,35.3293,-97.4758,Oklahoma,"Moore, Oklahoma",62055
+Pico Rivera,33.9902,-118.0888,California,"Pico Rivera, California",62027
+Casa Grande,32.9068,-111.7624,Arizona,"Casa Grande, Arizona",61966
+Monessen,40.1519,-79.8828,Pennsylvania,"Monessen, Pennsylvania",61960
+Montebello,34.0155,-118.1108,California,"Montebello, California",61954
+Fairfield,41.1775,-73.2733,Connecticut,"Fairfield, Connecticut",61740
+North Bergen,40.7938,-74.0242,New Jersey,"North Bergen, New Jersey",61619
+Rome,34.2661,-85.1862,Georgia,"Rome, Georgia",61537
+The Hammocks,25.67,-80.4483,Florida,"The Hammocks, Florida",61516
+Millcreek,40.6892,-111.8291,Utah,"Millcreek, Utah",61450
+Sanford,28.7893,-81.276,Florida,"Sanford, Florida",61448
+National City,32.6654,-117.0983,California,"National City, California",61394
+Burnsville,44.7648,-93.2795,Minnesota,"Burnsville, Minnesota",61339
+Coconut Creek,26.2803,-80.1842,Florida,"Coconut Creek, Florida",61248
+Morristown,36.2046,-83.3006,Tennessee,"Morristown, Tennessee",61171
+Reston,38.9497,-77.3461,Virginia,"Reston, Virginia",61147
+Lakewood,47.1628,-122.5299,Washington,"Lakewood, Washington",61037
+Hamden,41.3961,-72.9215,Connecticut,"Hamden, Connecticut",60982
+Spring,30.0613,-95.383,Texas,"Spring, Texas",60976
+Gadsden,34.009,-86.0156,Alabama,"Gadsden, Alabama",60944
+Taylor,42.226,-83.2688,Michigan,"Taylor, Michigan",60922
+Novi,42.4786,-83.4893,Michigan,"Novi, Michigan",60896
+Marietta,33.9533,-84.5422,Georgia,"Marietta, Georgia",60867
+Hot Springs,34.4892,-93.0501,Arkansas,"Hot Springs, Arkansas",60767
+Woodland,38.6712,-121.75,California,"Woodland, California",60598
+Fountainebleau,25.7723,-80.3458,Florida,"Fountainebleau, Florida",60547
+La Habra,33.9278,-117.9513,California,"La Habra, California",60513
+Malden,42.4305,-71.0576,Massachusetts,"Malden, Massachusetts",60470
+Bensalem,40.1086,-74.9431,Pennsylvania,"Bensalem, Pennsylvania",60428
+South Whittier,33.9336,-118.0311,California,"South Whittier, California",60357
+Commerce City,39.8642,-104.8434,Colorado,"Commerce City, Colorado",60336
+South Hill,47.1203,-122.2848,Washington,"South Hill, Washington",60172
+Plymouth,41.8783,-70.6309,Massachusetts,"Plymouth, Massachusetts",60024
+Bristol,41.6812,-72.9407,Connecticut,"Bristol, Connecticut",59947
+Columbus,39.2093,-85.9183,Indiana,"Columbus, Indiana",59897
+West Allis,43.0068,-88.0296,Wisconsin,"West Allis, Wisconsin",59890
+Taylorsville,40.657,-111.9493,Utah,"Taylorsville, Utah",59805
+Bangor,44.8322,-68.7906,Maine,"Bangor, Maine",59772
+Monterey Park,34.0497,-118.1326,California,"Monterey Park, California",59669
+Greenwood,39.6019,-86.1073,Indiana,"Greenwood, Indiana",59458
+Bartlett,35.2337,-89.8195,Tennessee,"Bartlett, Tennessee",59440
+Bradenton,27.49,-82.5739,Florida,"Bradenton, Florida",59439
+Pontiac,42.6493,-83.2878,Michigan,"Pontiac, Michigan",59438
+Staunton,38.1593,-79.0611,Virginia,"Staunton, Virginia",59433
+Meriden,41.5367,-72.7944,Connecticut,"Meriden, Connecticut",59395
+Clay,43.1809,-76.1955,New York,"Clay, New York",59364
+Gardena,33.8944,-118.3073,California,"Gardena, California",59329
+Apex,35.7239,-78.8728,North Carolina,"Apex, North Carolina",59300
+Royal Oak,42.5084,-83.1539,Michigan,"Royal Oak, Michigan",59277
+Cupertino,37.3168,-122.0465,California,"Cupertino, California",59276
+La Mesa,32.7703,-117.0204,California,"La Mesa, California",59249
+Benton Harbor,42.1159,-86.4488,Michigan,"Benton Harbor, Michigan",59216
+Brookline,42.3243,-71.1408,Massachusetts,"Brookline, Massachusetts",59180
+Lower Merion,40.0282,-75.2807,Pennsylvania,"Lower Merion, Pennsylvania",59037
+St. Clair Shores,42.4921,-82.8957,Michigan,"St. Clair Shores, Michigan",58984
+Des Plaines,42.0345,-87.9009,Illinois,"Des Plaines, Illinois",58899
+Lewiston,44.0915,-70.1681,Maine,"Lewiston, Maine",58802
+Margate,26.2466,-80.2119,Florida,"Margate, Florida",58796
+Midland,43.6241,-84.2319,Michigan,"Midland, Michigan",58787
+Carson City,39.1512,-119.7474,Nevada,"Carson City, Nevada",58756
+Bowie,38.9569,-76.7409,Maryland,"Bowie, Maryland",58643
+Middletown,41.4459,-74.4236,New York,"Middletown, New York",58592
+Caldwell,43.6453,-116.6591,Idaho,"Caldwell, Idaho",58481
+San Rafael,37.9905,-122.5222,California,"San Rafael, California",58440
+Union,40.6953,-74.2697,New Jersey,"Union, New Jersey",58297
+Hamburg,42.7394,-78.8581,New York,"Hamburg, New York",58266
+Richland,46.2824,-119.2938,Washington,"Richland, Washington",58225
+St. Peters,38.7824,-90.6061,Missouri,"St. Peters, Missouri",58212
+Wesley Chapel,28.2106,-82.3238,Florida,"Wesley Chapel, Florida",58208
+Hendersonville,36.3063,-86.5998,Tennessee,"Hendersonville, Tennessee",58113
+White Plains,41.022,-73.7549,New York,"White Plains, New York",58109
+Huntersville,35.4058,-80.8727,North Carolina,"Huntersville, North Carolina",58098
+Southampton,40.8996,-72.4937,New York,"Southampton, New York",58094
+Santee,32.8554,-116.9851,California,"Santee, California",58081
+Jefferson City,38.5676,-92.1759,Missouri,"Jefferson City, Missouri",58025
+Beckley,37.7878,-81.1841,West Virginia,"Beckley, West Virginia",57942
+Arcadia,34.1342,-118.0373,California,"Arcadia, California",57939
+Titusville,28.5727,-80.8193,Florida,"Titusville, Florida",57891
+Cartersville,34.1639,-84.8007,Georgia,"Cartersville, Georgia",57873
+Walla Walla,46.067,-118.3366,Washington,"Walla Walla, Washington",57860
+Orland Park,41.6074,-87.8619,Illinois,"Orland Park, Illinois",57857
+Towson,39.3944,-76.619,Maryland,"Towson, Maryland",57817
+Manchester,41.7753,-72.5242,Connecticut,"Manchester, Connecticut",57805
+Weymouth,42.1984,-70.9466,Massachusetts,"Weymouth, Massachusetts",57746
+Parker,39.5084,-104.7753,Colorado,"Parker, Colorado",57706
+Palm Beach Gardens,26.8466,-80.1679,Florida,"Palm Beach Gardens, Florida",57704
+Bozeman,45.6832,-111.0552,Montana,"Bozeman, Montana",57695
+East Stroudsburg,41.0023,-75.1779,Pennsylvania,"East Stroudsburg, Pennsylvania",57577
+Huntington Park,33.98,-118.2167,California,"Huntington Park, California",57509
+Taunton,41.9036,-71.0943,Massachusetts,"Taunton, Massachusetts",57464
+Midwest City,35.463,-97.3709,Oklahoma,"Midwest City, Oklahoma",57407
+Medford,42.4234,-71.1087,Massachusetts,"Medford, Massachusetts",57341
+Goldsboro,35.3778,-77.972,North Carolina,"Goldsboro, North Carolina",57278
+Euless,32.8508,-97.0799,Texas,"Euless, Texas",57197
+Manhattan,39.1886,-96.6046,Kansas,"Manhattan, Kansas",57046
+Shoreline,47.7564,-122.3426,Washington,"Shoreline, Washington",57027
+Jackson,40.098,-74.3579,New Jersey,"Jackson, New Jersey",56968
+Piscataway,40.5467,-74.4636,New Jersey,"Piscataway, New Jersey",56884
+Lake Havasu City,34.5006,-114.3113,Arizona,"Lake Havasu City, Arizona",56820
+Smyrna,33.8633,-84.5168,Georgia,"Smyrna, Georgia",56666
+Cape Girardeau,37.3108,-89.5597,Missouri,"Cape Girardeau, Missouri",56551
+Tamiami,25.7556,-80.4016,Florida,"Tamiami, Florida",56225
+Kendale Lakes,25.7081,-80.4078,Florida,"Kendale Lakes, Florida",56182
+Grants Pass,42.4333,-123.3317,Oregon,"Grants Pass, Oregon",55837
+Blue Springs,39.0124,-94.2721,Missouri,"Blue Springs, Missouri",55829
+Southaven,34.9514,-89.9787,Mississippi,"Southaven, Mississippi",55780
+Tinley Park,41.567,-87.805,Illinois,"Tinley Park, Illinois",55773
+Diamond Bar,33.9991,-117.8161,California,"Diamond Bar, California",55720
+Pittsfield,42.4517,-73.2605,Massachusetts,"Pittsfield, Massachusetts",55697
+Eagle Pass,28.7125,-100.484,Texas,"Eagle Pass, Texas",55686
+New Brunswick,40.487,-74.445,New Jersey,"New Brunswick, New Jersey",55676
+Lenexa,38.9609,-94.8018,Kansas,"Lenexa, Kansas",55625
+Hazleton,40.9504,-75.9724,Pennsylvania,"Hazleton, Pennsylvania",55604
+Twin Falls,42.5645,-114.4615,Idaho,"Twin Falls, Idaho",55556
+Brookhaven,33.8744,-84.3314,Georgia,"Brookhaven, Georgia",55554
+Novato,38.092,-122.5576,California,"Novato, California",55516
+Tigard,45.4237,-122.7845,Oregon,"Tigard, Oregon",55514
+Abington,40.1108,-75.1146,Pennsylvania,"Abington, Pennsylvania",55459
+Highland,34.1113,-117.1654,California,"Highland, California",55417
+Fountain Valley,33.7105,-117.9514,California,"Fountain Valley, California",55357
+Dearborn Heights,42.3164,-83.2769,Michigan,"Dearborn Heights, Michigan",55353
+Grapevine,32.9343,-97.0744,Texas,"Grapevine, Texas",55281
+Fond du Lac,43.7718,-88.4396,Wisconsin,"Fond du Lac, Wisconsin",55209
+Hacienda Heights,33.997,-117.9728,California,"Hacienda Heights, California",55188
+Ithaca,42.4442,-76.5032,New York,"Ithaca, New York",55137
+Apple Valley,44.7457,-93.2006,Minnesota,"Apple Valley, Minnesota",55135
+Chicopee,42.1764,-72.5719,Massachusetts,"Chicopee, Massachusetts",55126
+Oak Lawn,41.7139,-87.7528,Illinois,"Oak Lawn, Illinois",55022
+Cathedral City,33.8363,-116.4642,California,"Cathedral City, California",55007
+Delano,35.767,-119.2637,California,"Delano, California",54917
+Bentonville,36.3546,-94.2306,Arkansas,"Bentonville, Arkansas",54909
+Stonecrest,33.6842,-84.1372,Georgia,"Stonecrest, Georgia",54903
+Kettering,39.6957,-84.1495,Ohio,"Kettering, Ohio",54855
+Colton,34.0538,-117.3254,California,"Colton, California",54824
+Kingston,41.9295,-73.9968,New York,"Kingston, New York",54791
+West Haven,41.2739,-72.9672,Connecticut,"West Haven, Connecticut",54620
+St. Cloud,28.2294,-81.2829,Florida,"St. Cloud, Florida",54579
+Normal,40.5218,-88.9881,Illinois,"Normal, Illinois",54469
+Berwyn,41.8433,-87.7909,Illinois,"Berwyn, Illinois",54391
+Milford,41.2256,-73.0616,Connecticut,"Milford, Connecticut",54328
+Aloha,45.492,-122.8726,Oregon,"Aloha, Oregon",54287
+Arroyo Grande,35.1241,-120.5845,California,"Arroyo Grande, California",54177
+Irvington,40.7242,-74.2318,New Jersey,"Irvington, New Jersey",54079
+Minnetonka,44.9322,-93.4598,Minnesota,"Minnetonka, Minnesota",54064
+Rosemead,34.0689,-118.0823,California,"Rosemead, California",54058
+Paramount,33.8976,-118.1652,California,"Paramount, California",53955
+Wayne,40.9481,-74.2453,New Jersey,"Wayne, New Jersey",53954
+Yucaipa,34.0336,-117.0429,California,"Yucaipa, California",53921
+Brunswick,31.145,-81.474,Georgia,"Brunswick, Georgia",53914
+Williamsport,41.2398,-77.0371,Pennsylvania,"Williamsport, Pennsylvania",53861
+Union,42.1258,-76.0329,New York,"Union, New York",53779
+Elyria,41.3761,-82.1063,Ohio,"Elyria, Ohio",53757
+Leesburg,39.1058,-77.5544,Virginia,"Leesburg, Virginia",53727
+Mount Prospect,42.0641,-87.9375,Illinois,"Mount Prospect, Illinois",53719
+Bristol,40.1216,-74.8667,Pennsylvania,"Bristol, Pennsylvania",53649
+Pinellas Park,27.8589,-82.7078,Florida,"Pinellas Park, Florida",53637
+Bellevue,41.1535,-95.9357,Nebraska,"Bellevue, Nebraska",53544
+West Sacramento,38.5557,-121.5504,California,"West Sacramento, California",53519
+Apopka,28.7014,-81.5304,Florida,"Apopka, Florida",53447
+Lewiston,46.3934,-116.9934,Idaho,"Lewiston, Idaho",53384
+Millcreek,42.0861,-80.1193,Pennsylvania,"Millcreek, Pennsylvania",53297
+Grand Island,40.9214,-98.3584,Nebraska,"Grand Island, Nebraska",53296
+Palm Desert,33.7378,-116.3695,California,"Palm Desert, California",53275
+Milford city,41.2256,-73.0625,Connecticut,"Milford city, Connecticut",53195
+Watertown,43.9734,-75.9094,New York,"Watertown, New York",53163
+Little Elm,33.1856,-96.929,Texas,"Little Elm, Texas",53126
+Chambersburg,39.9315,-77.6556,Pennsylvania,"Chambersburg, Pennsylvania",53083
+Revere,42.4192,-71.0036,Massachusetts,"Revere, Massachusetts",53073
+Peabody,42.5335,-70.9724,Massachusetts,"Peabody, Massachusetts",53070
+Wylie,33.0362,-96.5161,Texas,"Wylie, Texas",53067
+Beaufort,32.4597,-80.7235,South Carolina,"Beaufort, South Carolina",53051
+Aspen Hill,39.0928,-77.0823,Maryland,"Aspen Hill, Maryland",53049
+DeSoto,32.5992,-96.8633,Texas,"DeSoto, Texas",52988
+Helena,46.5965,-112.0202,Montana,"Helena, Montana",52936
+Edina,44.8914,-93.3602,Minnesota,"Edina, Minnesota",52857
+Wheaton,41.8561,-88.1083,Illinois,"Wheaton, Illinois",52745
+West New York,40.7856,-74.0093,New Jersey,"West New York, New Jersey",52723
+Hoboken,40.7453,-74.0279,New Jersey,"Hoboken, New Jersey",52677
+Lacey,47.046,-122.7934,Washington,"Lacey, Washington",52592
+Summerville,33.0015,-80.1799,South Carolina,"Summerville, South Carolina",52549
+Parsippany-Troy Hills,40.8601,-74.4238,New Jersey,"Parsippany-Troy Hills, New Jersey",52407
+Oak Park,41.8872,-87.7899,Illinois,"Oak Park, Illinois",52381
+Maricopa,33.0404,-112.0006,Arizona,"Maricopa, Arizona",52127
