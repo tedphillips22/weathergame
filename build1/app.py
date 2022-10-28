@@ -32,8 +32,6 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
-APIkey = "fc554137bf63e3cc6f44bae5376883b3"
-
 def get_current_weather(cityid):
 
     lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
