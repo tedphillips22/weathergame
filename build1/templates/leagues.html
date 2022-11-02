@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Team Page
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>League Name</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in leaguenames %}
+            <tr>
+                <th>{{ row['leaguename'] }}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

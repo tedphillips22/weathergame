@@ -165,7 +165,7 @@ def maketeam():
         db.execute("INSERT INTO teamcities (teamid, cityid) VALUES (?, ?)", teamid, city2id)
         db.execute("INSERT INTO teamcities (teamid, cityid) VALUES (?, ?)", teamid, city3id)
 
-        return message("Team named {0} created".format(teamname))
+        return message('Team named "{0}" created'.format(teamname))
 
     else:
         cities = db.execute("SELECT city_state FROM cities")
@@ -228,4 +228,59 @@ def myteams():
     
 
 
-    return render_template("teampage.html", citydict = citydict, teamslist = teamslist)
+    return render_template("myteams.html", citydict = citydict, teamslist = teamslist)
+
+@app.route("/makeleague", methods = ["POST", "GET"])
+@login_required
+def makeleague():
+    if request.method == "POST":
+        leaguename = request.form.get("leaguename")
+        #check for dupes
+        code = request.form.get("code")
+
+        userid = session["userid"]
+
+        db.execute("INSERT INTO leagues (leaguename, founderid, code) VALUES (?, ?, ?)", leaguename, userid, code)
+
+        return message('League called "{0}" created'.format(leaguename))
+
+
+    else:
+        return render_template("makeleague.html")
+
+@app.route("/leagues")
+@login_required
+def leagues():
+    userid = session["userid"]
+
+    leagueidsdict = db.execute('SELECT leagueid FROM leaguemembers WHERE userid = (?)', userid)
+    leagueids = []
+
+    #generate list of leagueids for user:
+    counter = 0
+    for row in leagueidsdict:
+        temp = leagueidsdict[counter]
+        leagueidtemp = temp["leagueid"]
+        leagueids.append(leagueidtemp)
+        counter += 1
+    
+    #convert ids to leaguenames:
+    leaguedict = []
+    counter = 0
+    for id in leagueids:
+        leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueids[counter])
+        leaguedict.append({'leaguename' : leaguename, 'leagueid' : leagueids[counter]})
+        counter += 1
+
+
+    return render_template("leagues.html", leaguedict = leaguedict)
+
+@app.route("/joinleague", methods = ["POST", "GET"])
+@login_required
+def joinleague():
+    if request.method == "POST":
+        userid = session["userid"]
+
+
+    else: 
+        return render_template("joinleague.html")

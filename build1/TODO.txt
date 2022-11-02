@@ -1,8 +1,11 @@
-
--Build leagues Lol 
 -Build home page
--Show states on autocomplete list
+
+-Password protect leagues
+-League invites
 
 -team builder: autocomplete from list, but not from previous entries
+-check for team name dupes when creating teams
 
--check for team name dupes 
+-Finalize game setup
+
+-Draft
