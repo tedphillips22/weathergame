@@ -1,21 +1,23 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Team Page
+    {{ lleaguename }}
 {% endblock %}
 
 {% block main %}
+    <h2>{{ lleaguename }}</h2>
     <table class="table">
         <thead>
             <tr>
-                <th>League Name</th>
                 <th>Team</th>
+                <th>Owner</th>
             </tr>
         </thead>
         <tbody>
-            {% for row in leaguenames %}
+            {% for row in leaguelist %}
             <tr>
-                <th>{{ row['leaguename'] }}</th>
+                <td>{{ row['teamname'] }}</td>
+                <td>{{ row['username'] }}</td>
             </tr>
             {% endfor %}
         </tbody>

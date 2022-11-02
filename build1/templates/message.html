@@ -5,7 +5,11 @@
 {% endblock %}
 
 {% block main %}
+    
     <p>{{ message }}</p>
+    {% if errorval == 1 %}
     <button onclick="history.back()"><a class="nav-link">Go Back</a></button>
+    {% endif %}
     <button><a class="nav-link" href="/">Go Home</a></button>
+    
 {% endblock %}

@@ -45,10 +45,11 @@ def get_current_weather(cityid):
 
     return(weatherdict)
 
-def message(message):
+def message(message, errorval):
     """Render message to user."""
-
-    return render_template("message.html", message=message)
+    # errorval = 1 includes back button 
+    # 0 for no button
+    return render_template("message.html", message=message, errorval = errorval)
 
 def namecheck(city):
     namecheck = db.execute("SELECT count(*) FROM cities WHERE city_state = ?", city)[0]['count(*)']
@@ -78,18 +79,18 @@ def login():
 
         # Ensure username was submitted
         if not request.form.get("username"):
-            return message("must provide username")
+            return message("must provide username", 1)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
-            return message("must provide password")
+            return message("must provide password", 1)
 
         # Query database for username
         rows = db.execute("SELECT * FROM users WHERE username = ?", request.form.get("username"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
-            return message("invalid username and/or password")
+            return message("invalid username and/or password", 1)
 
         # Remember which user has logged in
         session["userid"] = rows[0]["id"]
@@ -123,7 +124,7 @@ def register():
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
         if password != confirmation:
-            return message("Passwords don't match")
+            return message("Passwords don't match", 1)
 
         else:
             hash = generate_password_hash(password)
@@ -146,17 +147,17 @@ def maketeam():
         
         city1 = request.form.get("city1")
         if namecheck(city1) == 0:
-            return message("Some cities not found. Please use autocomplete and fill in all the blanks.")
+            return message("Some cities not found. Please use autocomplete and fill in all the blanks.", 1)
         city1id = citycheck(city1)
 
         city2 = request.form.get("city2")
         if namecheck(city2) == 0:
-            return message("Some cities not found. Please use autocomplete and fill in all the blanks.")
+            return message("Some cities not found. Please use autocomplete and fill in all the blanks.", 1)
         city2id = citycheck(city2)
 
         city3 = request.form.get("city3")
         if namecheck(city3) == 0:
-            return message("Some cities not found. Please use autocomplete and fill in all the blanks.")
+            return message("Some cities not found. Please use autocomplete and fill in all the blanks.", 1)
         city3id = citycheck(city3)
 
         db.execute("INSERT INTO teams (userid, teamname) VALUES (?, ?)", userid, teamname)
@@ -165,7 +166,7 @@ def maketeam():
         db.execute("INSERT INTO teamcities (teamid, cityid) VALUES (?, ?)", teamid, city2id)
         db.execute("INSERT INTO teamcities (teamid, cityid) VALUES (?, ?)", teamid, city3id)
 
-        return message('Team named "{0}" created'.format(teamname))
+        return message('Team named "{0}" created'.format(teamname), 0)
 
     else:
         cities = db.execute("SELECT city_state FROM cities")
@@ -235,22 +236,25 @@ def myteams():
 def makeleague():
     if request.method == "POST":
         leaguename = request.form.get("leaguename")
-        #check for dupes
+        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguename) 
+        if leaguecheck != 0:
+            return message("League name taken. Please try another name.", 1)
+
         code = request.form.get("code")
 
         userid = session["userid"]
 
         db.execute("INSERT INTO leagues (leaguename, founderid, code) VALUES (?, ?, ?)", leaguename, userid, code)
 
-        return message('League called "{0}" created'.format(leaguename))
+        return message('League called "{0}" created'.format(leaguename), 0)
 
 
     else:
         return render_template("makeleague.html")
 
-@app.route("/leagues")
+@app.route("/myleagues")
 @login_required
-def leagues():
+def myleagues():
     userid = session["userid"]
 
     leagueidsdict = db.execute('SELECT leagueid FROM leaguemembers WHERE userid = (?)', userid)
@@ -268,12 +272,14 @@ def leagues():
     leaguedict = []
     counter = 0
     for id in leagueids:
-        leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueids[counter])
-        leaguedict.append({'leaguename' : leaguename, 'leagueid' : leagueids[counter]})
+        leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueids[counter])[0]["leaguename"]
+        teamid = db.execute("SELECT teamid FROM leaguemembers WHERE userid = (?) AND leagueid = (?)", userid, leagueids[counter])[0]['teamid']
+        teamname = db.execute("SELECT teamname FROM teams WHERE id = (?)", teamid)[0]['teamname']
+        leaguedict.append({'leaguename' : leaguename, 'leagueid' : leagueids[counter], 'teamname': teamname})
         counter += 1
 
 
-    return render_template("leagues.html", leaguedict = leaguedict)
+    return render_template("myleagues.html", leaguedict = leaguedict)
 
 @app.route("/joinleague", methods = ["POST", "GET"])
 @login_required
@@ -286,16 +292,22 @@ def joinleague():
         #check if leaguename provided by user exists
         leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguegiven) 
         if leaguecheck == 0:
-            return message("League not found")
+            return message("League not found", 1)
+
+        leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["id"]
+
+        membercheck = db.execute("SELECT count(*) FROM leaguemembers WHERE userid = (?) AND leagueid = (?)", userid, leagueid)
+        if membercheck != 0:
+            return message("Can't join a league more than once.", 1)
 
         #check passcode
         codegiven = request.form.get("code")
         leaguecode = db.execute("SELECT code FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["code"]
 
         if leaguecode != codegiven:
-            return message("Passcode incorrect")
+            return message("Passcode incorrect", 1)
 
-        leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["id"]
+        
         teamname = request.form.get("teamname")
         print(teamname)
         teamiddict = db.execute("SELECT id FROM teams WHERE teamname = (?) AND userid = (?)", teamname, userid)
@@ -306,7 +318,7 @@ def joinleague():
 
         db.execute("INSERT INTO leaguemembers (userid, leagueid, teamid) VALUES (?, ?, ?)", userid, leagueid, teamid)
 
-        return message('Successfully joined league called "{0}".'.format(leaguegiven))
+        return message('Successfully joined league called "{0}".'.format(leaguegiven), 0)
         
 
 
@@ -314,5 +326,56 @@ def joinleague():
         userid = session["userid"]
         userteams = db.execute("SELECT teamname FROM teams WHERE userid = (?)", userid)
         if len(userteams) == 0:
-            return message("You must create at least one team before joining a league")
+            return message("You must create at least one team before joining a league", 1)
         return render_template("joinleague.html", userteams = userteams)
+
+@app.route("/league/<leaguename>")
+@login_required
+def leaguepage(leaguename):
+    leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
+
+    lleaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueid)[0]['leaguename']
+
+    teamsdict = db.execute("SELECT teamid FROM leaguemembers WHERE leagueid = (?)", leagueid)
+
+    #loop through dict of team IDS and generate list of teams & owners
+    counter = 0
+    leaguelist = []
+    for row in teamsdict:
+        teamname = (db.execute("SELECT teamname FROM teams WHERE id = (?)", teamsdict[counter]["teamid"])[0]['teamname'])
+        useridtemp = db.execute("SELECT userid FROM teams WHERE id = (?)", teamsdict[counter]["teamid"])[0]['userid']
+        username = db.execute("SELECT username FROM users WHERE id = (?)", useridtemp)[0]['username']
+
+        leaguelist.append({'teamname' : teamname, 'username' : username})
+
+    return render_template("league.html", lleaguename = lleaguename, leaguelist = leaguelist)
+
+
+@app.route("/team/<teamname>")
+@login_required
+def teampage(teamname):
+    teamid = db.execute("SELECT id FROM teams WHERE teamname LIKE (?)", teamname)[0]['id']
+
+    tteamname = db.execute("SELECT teamname FROM teams WHERE id = (?)", teamid)[0]['teamname']
+
+    citiesdict = db.execute("SELECT cityid FROM teamcities WHERE teamid = (?)", teamid)
+
+    #loop through dict of city IDS and generate list of cities
+    counter = 0
+    citylist = []
+    for row in citiesdict:
+        cityid = citiesdict[counter]['cityid']
+        cityname = db.execute("SELECT city FROM cities WHERE id = (?)", cityid)[0]['city']
+        
+        # query API for weather info and add to citylist
+        weathertemp = get_current_weather(cityid)
+
+        temperature = weathertemp['hourly']['temperature_2m'][0]
+        feelslike = weathertemp['hourly']['apparent_temperature'][0]
+        weathercode = weathertemp['hourly']['weathercode'][0]
+        weatherdesc = db.execute("SELECT description FROM weathercodes WHERE code = ?", weathercode)[0]['description']
+
+        citylist.append({'cityname' : cityname, 'temperature' : temperature, 'feelslike' : feelslike, 'weatherdesc' : weatherdesc})
+        counter += 1
+
+    return render_template("team.html", tteamname = tteamname, citylist = citylist)

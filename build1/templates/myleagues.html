@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Leagues
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>League Name</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in leaguedict %}
+            <tr>
+                <td><button><a class="nav-link" href="/league/{{ row['leaguename'] }}">{{ row['leaguename'] }}</a></button></td>
+                <td>{{ row['teamname'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
