@@ -26,4 +26,18 @@
             {% endfor %}
         </tbody>
     </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Leagues (if any)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in leaguenames %}
+            <tr>
+                <td><button><a class="nav-link" href="/league/{{ row['leaguename'] }}">{{ row['leaguename'] }}</a></button></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

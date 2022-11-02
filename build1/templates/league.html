@@ -16,8 +16,8 @@
         <tbody>
             {% for row in leaguelist %}
             <tr>
-                <td>{{ row['teamname'] }}</td>
-                <td>{{ row['username'] }}</td>
+                <td><button><a class="nav-link" href="/team/{{ row['teamname'] }}">{{ row['teamname'] }}</a></button></td>
+                <td><button><a class="nav-link" href="/user/{{ row['username'] }}">{{ row['username'] }}</a></button></td>
             </tr>
             {% endfor %}
         </tbody>

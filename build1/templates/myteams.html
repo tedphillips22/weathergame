@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Team Page
+    My Teams
 {% endblock %}
 
 {% block main %}
@@ -18,7 +18,7 @@
         <tbody>
             {% for row in citydict %}
             <tr>
-                <th>{{ row['teamname'] }}</th>
+                <th><button><a class="nav-link" href="/team/{{ row['teamname'] }}">{{ row['teamname'] }}</a></button></th>
                 <td>{{ row['cityname'] }}</td>
                 <td>{{ row['temperature'] }}</td>
                 <td>{{ row['feelslike'] }}</td>

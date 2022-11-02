@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ uusername }}
+{% endblock %}
+
+{% block main %}
+    <h2>{{ uusername }}</h2>
+    <div>
+        <table class="table" style="float: left">
+            <thead>
+                <tr>
+                    <th>Teams</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in teamsdict %}
+                <tr>
+                    <td><button><a class="nav-link" href="/team/{{ row['teamname'] }}">{{ row['teamname'] }}</a></button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table" style="float: left">
+            <thead>
+                <tr>
+                    <th>Leagues</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in leaguenames %}
+                <tr>
+                    <td><button><a class="nav-link" href="/league/{{ row['leaguename'] }}">{{ row['leaguename'] }}</a></button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

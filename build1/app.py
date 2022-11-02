@@ -118,7 +118,7 @@ def register():
     if request.method == "POST":
 
         username = request.form.get("username")
-        if len(db.execute("SELECT username FROM users WHERE username = ?", username)) != 0:
+        if len(db.execute("SELECT username FROM users WHERE username LIKE ?", username)) != 0:
             return message("Username already exists")
 
         password = request.form.get("password")
@@ -378,4 +378,33 @@ def teampage(teamname):
         citylist.append({'cityname' : cityname, 'temperature' : temperature, 'feelslike' : feelslike, 'weatherdesc' : weatherdesc})
         counter += 1
 
-    return render_template("team.html", tteamname = tteamname, citylist = citylist)
+    leagueids = db.execute("SELECT leagueid FROM leaguemembers WHERE teamid = ?", teamid)
+    counter = 0
+    leaguenames = []
+    for row in leagueids:
+        leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = ?", leagueids[counter]['leagueid'])[0]['leaguename']
+        leaguenames.append({'leaguename' : leaguename})
+
+    return render_template("team.html", tteamname = tteamname, citylist = citylist, leaguenames = leaguenames)
+
+@app.route("/user/<username>")
+@login_required
+def userpage(username):
+    pageid = db.execute("SELECT id FROM users WHERE username LIKE (?)", username)[0]['id']
+
+    uusername = db.execute("SELECT username FROM users WHERE id = ?", pageid)[0]['username']
+
+    teamsdict = db.execute("SELECT teamname FROM teams WHERE userid = ?", pageid)
+
+    leagueids = db.execute ("SELECT leagueid FROM leaguemembers WHERE userid = ?", pageid)
+
+    #convert league IDS to league names
+    counter = 0
+    leaguenames = []
+    for row in leagueids:
+        leagueid = leagueids[counter]['leagueid']
+        leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = ?", leagueid)[0]['leaguename']
+        leaguenames.append({'leaguename' : leaguename})
+        counter += 1
+    
+    return render_template("user.html", uusername = uusername, teamsdict = teamsdict, leaguenames = leaguenames)
