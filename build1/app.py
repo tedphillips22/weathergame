@@ -281,6 +281,38 @@ def joinleague():
     if request.method == "POST":
         userid = session["userid"]
 
+        leaguegiven = request.form.get("leaguename")
+
+        #check if leaguename provided by user exists
+        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguegiven) 
+        if leaguecheck == 0:
+            return message("League not found")
+
+        #check passcode
+        codegiven = request.form.get("code")
+        leaguecode = db.execute("SELECT code FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["code"]
+
+        if leaguecode != codegiven:
+            return message("Passcode incorrect")
+
+        leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["id"]
+        teamname = request.form.get("teamname")
+        print(teamname)
+        teamiddict = db.execute("SELECT id FROM teams WHERE teamname = (?) AND userid = (?)", teamname, userid)
+
+        print(teamiddict)
+
+        teamid = teamiddict[0]['id']
+
+        db.execute("INSERT INTO leaguemembers (userid, leagueid, teamid) VALUES (?, ?, ?)", userid, leagueid, teamid)
+
+        return message('Successfully joined league called "{0}".'.format(leaguegiven))
+        
+
 
     else: 
-        return render_template("joinleague.html")
+        userid = session["userid"]
+        userteams = db.execute("SELECT teamname FROM teams WHERE userid = (?)", userid)
+        if len(userteams) == 0:
+            return message("You must create at least one team before joining a league")
+        return render_template("joinleague.html", userteams = userteams)

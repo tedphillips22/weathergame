@@ -7,10 +7,16 @@
 {% block main %}
     <form action="/joinleague" method="POST">
         <div class="mb-3">
-            <label for="leaguename">League Name (case sensitive)</label>
+            <label for="leaguename">League Name</label>
             <input type="text" id="leaguename" class="form-control mx-auto w-auto" name="leaguename" required>
-            <label for="code">Passcode (if you want)</label>
+            <label for="code">Passcode (if there is one)</label>
             <input type="text" id="code" class="form-control mx-auto w-auto" name="code">
+            <label for="teamname">Team (select one)</label>
+            <select type="text" name="teamname" class="form-control mx-auto w-auto">
+                {% for row in userteams %}
+                <option value ="{{ row['teamname'] }}">{{ row['teamname'] }}</option>
+                {% endfor %}
+            </select>
             <br>
             <button type="submit">Submit</button>
         </div>

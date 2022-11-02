@@ -1,7 +1,8 @@
 -Build home page
 
--Password protect leagues
 -League invites
+-Should league codes be hashed/secure?
+-Address repeated teams in leagues (see Draft)
 
 -team builder: autocomplete from list, but not from previous entries
 -check for team name dupes when creating teams
