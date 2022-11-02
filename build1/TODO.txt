@@ -1,5 +1,7 @@
 -Build home page
 
+-Optimize organization of "My Teams", "My Leagues", etc. Lots of overlap
+
 -League invites
 -Should league codes be hashed/secure?
 -Address repeated cities in leagues (see Draft)

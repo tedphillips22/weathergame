@@ -119,7 +119,7 @@ def register():
 
         username = request.form.get("username")
         if len(db.execute("SELECT username FROM users WHERE username LIKE ?", username)) != 0:
-            return message("Username already exists")
+            return message("Username already exists", 1)
 
         password = request.form.get("password")
         confirmation = request.form.get("confirmation")
@@ -390,7 +390,10 @@ def teampage(teamname):
 @app.route("/user/<username>")
 @login_required
 def userpage(username):
-    pageid = db.execute("SELECT id FROM users WHERE username LIKE (?)", username)[0]['id']
+    if username == "self":
+        pageid = session["userid"]
+    else:
+        pageid = db.execute("SELECT id FROM users WHERE username LIKE (?)", username)[0]['id']
 
     uusername = db.execute("SELECT username FROM users WHERE id = ?", pageid)[0]['username']
 
