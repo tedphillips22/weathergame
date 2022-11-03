@@ -1,12 +1,12 @@
--Build home page
+-refine home page
 
 -Optimize organization of "My Teams", "My Leagues", etc. Lots of overlap
 
 -League invites
 -Should league codes be hashed/secure?
--Address repeated cities in leagues (see Draft)
+-Address repeated cities in leagues (Draft)
 
--check for team name dupes when creating teams
+-build system to allow for team name repeats across users (nest dynamic team URLs under user, check for dupes within league)
 
 -Finalize game setup
 

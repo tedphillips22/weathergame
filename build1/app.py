@@ -165,6 +165,7 @@ def getteamsleagueinfo(teamid): #outputs dict of leaguenames for a given teamid
 
 
 
+########## Website Functions -- Login, Logout, Register #################################
 
 @app.route("/")
 @login_required
@@ -245,6 +246,8 @@ def register():
 
         return render_template("register.html")
 
+########## Team and league forms ###############################################################
+
 @app.route("/maketeam", methods = ["POST", "GET"])
 @login_required
 def maketeam():
@@ -284,64 +287,6 @@ def maketeam():
         cities = db.execute("SELECT city_state FROM cities")
         return render_template("maketeam.html", cities = cities)
         
-@app.route("/myteams")
-@login_required
-def myteams():
-    userid = session["userid"]
-
-    teamidsdict = db.execute("SELECT id FROM teams WHERE userid = ?", userid)
-    teamids = []
-
-    #generate list of users teamids
-    counter = 0
-    for row in teamidsdict:
-        temp = teamidsdict[counter]
-        teamidtemp = temp["id"]
-        teamids.append(teamidtemp)
-        counter += 1
-
-    teamsdict = []
-
-    #generate list of all cities from all teams [{'teamid': x, 'cityid': x}, ...]
-    counter = 0
-    for id in teamids:
-        cityiddicttemp = db.execute("SELECT teamid, cityid FROM teamcities WHERE teamid = ?", teamids[counter])
-        teamsdict.append(cityiddicttemp)
-        counter += 1
-
-    
-    #convert dict of ids to names
-    citydict = []
-    teamslist = []
-    counter = 0
-    for row in teamsdict:
-        counter = 0
-        teamidtemp = row[counter]['teamid']
-        teamnametemp = db.execute("SELECT teamname FROM teams WHERE id = ?", teamidtemp)[0]['teamname']
-        teamslist.append({'teamname' : teamnametemp})
-        for item in row:
-            cityidtemp = row[counter]['cityid']
-            counter += 1                
-            citynametemp = db.execute("SELECT city FROM cities WHERE id = ?", cityidtemp)[0]['city']
-            #query weather api for data and select what we need from it
-            
-            weathertemp = get_current_weather(cityidtemp)
-            
-            temperature = weathertemp['hourly']['temperature_2m'][0]
-            feelslike = weathertemp['hourly']['apparent_temperature'][0]
-            weathercode = weathertemp['hourly']['weathercode'][0]
-
-            weatherdesc = db.execute("SELECT description FROM weathercodes WHERE code = ?", weathercode)[0]['description']
-
-
-
-
-            citydict.append({'teamname' : teamnametemp, 'cityname' : citynametemp, 'temperature' : temperature, 'feelslike' : feelslike, 'weatherdesc' : weatherdesc})
-            
-    
-
-
-    return render_template("myteams.html", citydict = citydict, teamslist = teamslist)
 
 @app.route("/makeleague", methods = ["POST", "GET"])
 @login_required
@@ -363,15 +308,6 @@ def makeleague():
 
     else:
         return render_template("makeleague.html")
-
-@app.route("/myleagues")
-@login_required
-def myleagues():
-    userid = session["userid"]
-
-    leaguedict = getusersleagueteamdicts(userid)
-
-    return render_template("myleagues.html", leaguedict = leaguedict)
 
 @app.route("/joinleague", methods = ["POST", "GET"])
 @login_required
@@ -420,6 +356,19 @@ def joinleague():
         if len(userteams) == 0:
             return message("You must create at least one team before joining a league", 1)
         return render_template("joinleague.html", userteams = userteams)
+
+
+########## Display user, team, and league info ################################################
+
+@app.route("/myleagues")
+@login_required
+def myleagues():
+    userid = session["userid"]
+
+    leaguedict = getusersleagueteamdicts(userid)
+
+    return render_template("myleagues.html", leaguedict = leaguedict)
+
 
 @app.route("/league/<leaguename>")
 @login_required
