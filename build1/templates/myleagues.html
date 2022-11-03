@@ -16,7 +16,7 @@
             {% for row in leaguedict %}
             <tr>
                 <td><button><a class="nav-link" href="/league/{{ row['leaguename'] }}">{{ row['leaguename'] }}</a></button></td>
-                <td>{{ row['teamname'] }}</td>
+                <td><button><a class="nav-link" href="/team/{{ row['teamname'] }}">{{ row['teamname'] }}</a></button></td>
             </tr>
             {% endfor %}
         </tbody>
