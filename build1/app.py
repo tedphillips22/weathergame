@@ -165,7 +165,7 @@ def getteamsleagueinfo(teamid): #outputs dict of leaguenames for a given teamid
 
 
 
-########## Website Functions -- Login, Logout, Register #################################
+########## Website Functions -- Home page, Login, Logout, Register #################################
 
 @app.route("/")
 @login_required

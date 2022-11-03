@@ -1,0 +1,15 @@
+City Prizes:
+- Worst/best weekly prediction -- temperature
+- Worst/best weekly prediction -- rainfall
+- Closest to/furthest from historical average temperature
+- Closest to/furthest from historical average rainfall/precipitation
+- Most/least rain
+- Strongest/weakest wind gust
+- Most snow
+- Highest/lowest temp
+- Days within target weather range (eg Sweater Weather, beach weather)
+
+Team Prizes:
+- Most/least total snowfall/rainfall
+- Highest/lowest temperature variance
+- 
