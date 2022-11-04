@@ -1,15 +1,22 @@
 -refine home page
 
--Optimize organization of "My Teams", "My Leagues", etc. Lots of overlap
+-Front end cleanup EEK
 
 -League invites
 -Should league codes be hashed/secure?
 -Address repeated cities in leagues (Draft)
+-full league scoreboard
 
 -build system to allow for team name repeats across users (nest dynamic team URLs under user, check for dupes within league)
 
--Finalize game setup
+-game setup
 
 -Schedule scoring API pull (crontab / cron)
+    -Record past week and calculate the score 
+    -Capture predictions for the next week 
 
 -Draft
+
+-Expand parameters
+
+-Double check that snow is coming in CM rather than inches

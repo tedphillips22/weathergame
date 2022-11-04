@@ -1,0 +1,12 @@
+pcode,pname,description
+1,temperature_2m_max,Hi temp
+2,temperature_2m_min,low temp
+3,apparent_temperature_max,high feelslike
+4,apparent_temperature_min,low feelslike
+5,rain_sum,Rainfall
+6,snowfall_sum,Snowfall
+7,showers_sum,Showers
+8,precipitation_sum,Precipitation amount
+9,precipitation_hours,Precipitation Hours
+10,cloudcover,cloudcover
+11,windgusts_10m_max,Wind Gusts (10m)

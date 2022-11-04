@@ -1,0 +1,9 @@
+Welcome to WeatherGame, a fantasy sports-style game based on real-world weather events!
+
+Every week, you will face off with another team in a head to head matchup. The categories change every week. They might reward heat, accurate forecasts, straying from historical averages -- each week something new!
+
+To get started, you will make a team by selecting 3 cities. The top 100 US cities are available, as well as a hundred or so cities from around the world. Watch out for Southern Hemisphere or equatorial cities, they could be a big help or huge weakness... 
+
+Once you make a team, you can either create a league or join an existing one.
+
+Be sure to log on each week so you can set Boosts for the following week. Boosts allow you to add or remove points from a category depending on your team's strengths.  
