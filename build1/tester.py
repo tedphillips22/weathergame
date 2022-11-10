@@ -1,3 +1,3 @@
-import getweatherdata as gw
+import gamefunctions
 
-gw.getmeasurement(506,3)
+gamefunctions.runcat("2AMT", 1, 2)

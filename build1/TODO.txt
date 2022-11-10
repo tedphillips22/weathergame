@@ -19,4 +19,12 @@
 
 -Expand parameters
 
+-Add target temps
+
 -Double check that snow is coming in CM rather than inches
+
+-city page with forecasts, historical averages
+
+-home page shows hottest, coldest, etc cities from our roster
+
+-record highs/lows in 20 year avg period
