@@ -1,11 +1,17 @@
-from flask import Flask, flash, redirect, render_template, request, session 
-import requests, json
-from flask_session import Session
-from cs50 import SQL
-from werkzeug.security import check_password_hash, generate_password_hash
+import json
 from functools import wraps
-from helpers import login_required, get_current_weather, message, namecheck, citycheck, getleagueinfo, getteamcitiesweather, getteamsleagueinfo, getusersleaguenames, getusersleagueteamdicts, getusersteamnames
+
+import requests
+from cs50 import SQL
+from flask import Flask, flash, redirect, render_template, request, session
+from werkzeug.security import check_password_hash, generate_password_hash
+
 import gamefunctions as g
+from flask_session import Session
+from helpers import (citycheck, get_current_weather, getleagueinfo,
+                     getteamcitiesweather, getteamsleagueinfo,
+                     getusersleaguenames, getusersleagueteamdicts,
+                     getusersteamnames, login_required, message, namecheck)
 
 app = Flask(__name__)
 
