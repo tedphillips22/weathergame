@@ -1,3 +1,3 @@
-import gamefunctions
+import getweatherdata
 
-gamefunctions.runcat("2AMT", 1, 2)
+getweatherdata.getaverage(13, 1)
