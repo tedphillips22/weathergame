@@ -4,16 +4,20 @@ from datetime import date, timedelta
 
 db = SQL("sqlite:///weather.db")
 
-def getprediction(cityid, pcode): #fetches daily predictions for given city/pcode combination. creates 7 entries in predictions table
-    lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
+def getpredictiondict(cityid): #fetches daily predictions for given city/pcode combination.
     lon = db.execute("SELECT lon FROM cities WHERE id = ?", cityid)[0]['lon']
+    lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
 
     url = "https://api.open-meteo.com/v1/forecast?latitude="+str(lat)+"&longitude="+str(lon)+"&hourly=cloudcover&daily=temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,precipitation_sum,rain_sum,showers_sum,snowfall_sum,precipitation_hours,windgusts_10m_max&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York"
     response = requests.get(url)
     weatherdict = response.json()
 
+    return(weatherdict)
+
+def readpredictiondict(cityid, pcode, weatherdict): #records prediction for given cityid/pcode combo (must be paired with)
     pname = db.execute("SELECT pname FROM param_codes WHERE pcode = ?", pcode)[0]['pname']
     
+    pcode = int(pcode)
 
     #special version for cloudcover (only available as hourly data)
     if pcode == 10:
@@ -40,7 +44,7 @@ def getprediction(cityid, pcode): #fetches daily predictions for given city/pcod
 
     return()
 
-def getmeasurement(cityid, pcode):
+def getmeasurementdict(cityid):
     lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
     lon = db.execute("SELECT lon FROM cities WHERE id = ?", cityid)[0]['lon']
 
@@ -48,6 +52,9 @@ def getmeasurement(cityid, pcode):
     response = requests.get(url)
     weatherdict = response.json()
 
+    return(weatherdict)
+
+def readmeasurementdict(cityid, pcode, weatherdict):
     pname = db.execute("SELECT pname FROM param_codes WHERE pcode = ?", pcode)[0]['pname']
 
     #special version for cloudcover (only available as hourly data)
@@ -75,7 +82,10 @@ def getmeasurement(cityid, pcode):
 
     return()
 
-def getaverage(cityid, pcode):
+def getmeasurement(cityid, pcode):
+    readmeasurementdict(cityid,pcode, getmeasurementdict(cityid))
+
+def getaverage(cityid, pcode): 
     lat = db.execute("SELECT lat FROM cities WHERE id = ?", cityid)[0]['lat']
     lon = db.execute("SELECT lon FROM cities WHERE id = ?", cityid)[0]['lon']
 

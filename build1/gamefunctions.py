@@ -1,10 +1,16 @@
 from datetime import date, timedelta
 from re import findall
 from cs50 import SQL
-from getweatherdata import getaverage, getmeasurement, getprediction
+from getweatherdata import getaverage, getmeasurement
 
 
 db = SQL("sqlite:///weather.db")
+
+def makeschedule(leagueid):
+    teams = db.execute("SELECT teamids FROM leaguemembers WHERE leagueid = ?", leagueid)
+    
+
+    return()
 
 def getmatchupdata(catcode, team1id, team2id): #accepts a category code and two team IDs and fetches/stores appropriate data 
     #make list of cityids

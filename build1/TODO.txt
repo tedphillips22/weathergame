@@ -1,5 +1,7 @@
 TEST P TYPE MATCHUPS AFTER PREDICTIONS MADE
 
+-split getaverages into two functions? (would require fairly fundamental rewrite)
+
 -refine home page
 
 -Front end cleanup EEK
