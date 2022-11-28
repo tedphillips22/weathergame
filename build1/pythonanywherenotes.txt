@@ -1,0 +1,9 @@
+When updating, change all 
+
+db = SQL("sqlite:///weather.db") 
+
+to 
+
+db = SQL("sqlite:////home/tedphillips22/weathergame/build1/weather.db")
+
+app, helpers, gamefunctions, getweatherdata, weeklytasks
