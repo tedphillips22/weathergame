@@ -89,7 +89,8 @@ def getusersleagueteamdicts(userid): #outputs dict of leaguename/leagueID/teamna
 
 def getleagueinfo(leagueid): #outputs dict with teamname/username pairs for given leagueID
     teamsdict = db.execute("SELECT teamid FROM leaguemembers WHERE leagueid = (?)", leagueid)
-
+    
+   
     #loop through dict of team IDS and generate list of teams & owners
     counter = 0
     leaguelist = []
@@ -97,9 +98,10 @@ def getleagueinfo(leagueid): #outputs dict with teamname/username pairs for give
         teamname = (db.execute("SELECT teamname FROM teams WHERE id = (?)", teamsdict[counter]["teamid"])[0]['teamname'])
         useridtemp = db.execute("SELECT userid FROM teams WHERE id = (?)", teamsdict[counter]["teamid"])[0]['userid']
         username = db.execute("SELECT username FROM users WHERE id = (?)", useridtemp)[0]['username']
-
+        counter += 1
         leaguelist.append({'teamname' : teamname, 'username' : username})
-    
+
+   
     return(leaguelist)
 
 def getteamcitiesweather(teamid): #outputs dict with city_state names and current weather info for those cities

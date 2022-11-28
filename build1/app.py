@@ -248,6 +248,9 @@ def leaguepage(leaguename):
 
     leaguelist = getleagueinfo(leagueid)
 
+    
+
+
     return render_template("league.html", lleaguename = lleaguename, leaguelist = leaguelist)
 
 
