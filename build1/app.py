@@ -33,15 +33,19 @@ Session(app)
 ########## Website Functions -- Home page, Login, Logout, Register #################################
 
 @app.route("/")
-@login_required
 def index():
+    return render_template("index.html")
+
+@app.route("/rainchecker")
+@login_required
+def rainchecker():
     userid = session["userid"]
 
     leaguedict = getusersleagueteamdicts(userid)
 
     teamnames = getusersteamnames(userid)
 
-    return render_template("index.html", leaguedict = leaguedict, teamnames = teamnames)
+    return render_template("rainchecker.html", leaguedict = leaguedict, teamnames = teamnames)
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
