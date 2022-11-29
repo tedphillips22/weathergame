@@ -2,14 +2,22 @@ import gamefunctions as gf
 import getweatherdata as gwd
 from cs50 import SQL
 from datetime import datetime
+from seasontasks import getweeknum
 
 db = SQL("sqlite:///weather.db")
 
-def getrosteredpredictions():
+def main():
     now = datetime.now()
     
-    if now.weekday() != 6:
+    if now.weekday() != 6: #only run on Sundays
         return()
+    
+    getrosteredpredictions()
+    weeknum = getweeknum()
+    runleaguematchups(weeknum)
+
+
+def getrosteredpredictions():
 
     rosteredcityids = []
 
@@ -36,6 +44,7 @@ def getrosteredpredictions():
 def getcatlist(weekid):
     catlist = []
     
+    #there is a cleaner way to do this!
     cat1 = db.execute("SELECT Cat1 FROM weeks WHERE weekid = ?", weekid)[0]['Cat1']
     catlist.append(cat1)
 
@@ -52,32 +61,31 @@ def getcatlist(weekid):
     catlist.append(cat5)
 
 
-    print(catlist)
+    return(catlist)
 
-def runleaguematchups(week, catlist):
+def runleaguematchups(week):
     #Fetch active league IDS
     leagueids = db.execute("SELECT id FROM leagues WHERE active = 1")
+
+    catlist = getcatlist(week)
 
     #Fetch relevant matchups
     matchups = []
     for league in leagueids:
         leagueid = league['id']
-        leaguematchups = db.execute("SELECT matchupid, hometeamid, awayteamid FROM schedules WHERE leagueid = ? AND week = ?", leagueid, week)
+        leaguematchups = db.execute("SELECT matchupid, hometeamid, awayteamid FROM matchups WHERE leagueid = ? AND week = ?", leagueid, week)
         for row in leaguematchups:
             matchups.append(row)
 
+    #Run each matchup
     for matchup in matchups:
         team1id = matchup['hometeamid']
         team2id = matchup['awayteamid']
         for catcode in catlist:
             winner = gf.runmatchup(catcode, team1id, team1id)
-            db.execute("UPDATE schedules SET winner = ? WHERE week = ? AND hometeamid = ? AND awayteamid = ?", winner, week, team1id, team2id)
-
-    
-        
-    
-    #Run each matchup
+            db.execute("UPDATE matchups SET winner = ? WHERE week = ? AND hometeamid = ? AND awayteamid = ?", winner, week, team1id, team2id)
 
     return()
 
 
+main()

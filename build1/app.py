@@ -1,5 +1,6 @@
 import json
 from functools import wraps
+import operator
 
 import requests
 from cs50 import SQL
@@ -12,6 +13,7 @@ from helpers import (citycheck, get_current_weather, getleagueinfo,
                      getteamcitiesweather, getteamsleagueinfo,
                      getusersleaguenames, getusersleagueteamdicts,
                      getusersteamnames, login_required, message, namecheck)
+from seasontasks import getweeknum
 
 app = Flask(__name__)
 
@@ -76,7 +78,7 @@ def login():
         session["userid"] = rows[0]["id"]
 
         # Redirect user to home page
-        return redirect("/")
+        return redirect("/rainchecker")
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
@@ -242,16 +244,47 @@ def myleagues():
 @app.route("/league/<leaguename>")
 @login_required
 def leaguepage(leaguename):
+    weeknum = 1 #getweeknum() #FIX THIS
+    
     leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
 
     lleaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueid)[0]['leaguename']
 
     leaguelist = getleagueinfo(leagueid)
 
+    matchuplist = db.execute("SELECT hometeamid, awayteamid FROM matchups WHERE leagueid = ? and week = ?", leagueid, weeknum)
     
+    matchups = []
 
+    for row in matchuplist:
+        homeid = row['hometeamid']
+        awayid = row['awayteamid']
+        homename = db.execute("SELECT teamname FROM teams WHERE id = ?", homeid)[0]['teamname']
+        awayname = db.execute("SELECT teamname FROM teams WHERE id = ?", awayid)[0]['teamname']
+        matchups.append({'home': homename, 'away': awayname})
 
-    return render_template("league.html", lleaguename = lleaguename, leaguelist = leaguelist)
+    userid = session["userid"]
+    userhomegames = db.execute("SELECT week, awayteamid FROM matchups WHERE leagueid = ? and hometeamid = ?", leagueid, userid)
+    userawaygames = db.execute("SELECT week, hometeamid FROM matchups WHERE leagueid = ? and awayteamid = ?", leagueid, userid)
+
+    usermatchups = []
+
+    for row in userhomegames:
+        weekid = row['week']
+        opponentid = row['awayteamid']
+        opponentname = db.execute("SELECT teamname FROM teams WHERE id = ?", opponentid)[0]['teamname']
+        usermatchups.append({'week':weekid, 'opponent':opponentname})
+
+    for row in userawaygames:
+        weekid = row['week']
+        opponentid = row['hometeamid']
+        opponentname = db.execute("SELECT teamname FROM teams WHERE id = ?", opponentid)[0]['teamname']
+        usermatchups.append({'week':weekid, 'opponent':opponentname})
+
+    usermatchups.sort(key=operator.itemgetter('week'))
+
+    print(usermatchups)
+    return render_template("league.html", lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
 
 
 @app.route("/team/<teamname>")

@@ -1,3 +1,6 @@
-import weeklytasks
+import seasontasks
+from datetime import date
 
-weeklytasks.getcatlist(3)
+weeknum = seasontasks.getweeknum()
+
+print(weeknum)
