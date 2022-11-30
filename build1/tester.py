@@ -1,6 +1,3 @@
-import seasontasks
-from datetime import date
+import helpers
 
-weeknum = seasontasks.getweeknum()
-
-print(weeknum)
+helpers.decodecatcode("6ALC")

@@ -39,6 +39,17 @@
     </table>
     </div>
     <div class="col">
+        <h3>This weeks categories:</h3>
+        <table class="table">
+            <thead>{{ weekname }}</thead>
+            <tbody>
+                {% for row in thisweekscats %}
+                <tr>
+                    <td>{{ row['catname'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
         <h3>All of your matchups</h3>
 
         <table class="table">

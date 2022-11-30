@@ -12,7 +12,8 @@ from flask_session import Session
 from helpers import (citycheck, get_current_weather, getleagueinfo,
                      getteamcitiesweather, getteamsleagueinfo,
                      getusersleaguenames, getusersleagueteamdicts,
-                     getusersteamnames, login_required, message, namecheck)
+                     getusersteamnames, login_required, message, namecheck,
+                     decodecatcode)
 from seasontasks import getweeknum
 import config
 
@@ -247,7 +248,7 @@ def myleagues():
 @app.route("/league/<leaguename>")
 @login_required
 def leaguepage(leaguename):
-    weeknum = 1 #getweeknum() #FIX THIS
+    weeknum = 4 #getweeknum() #FIX THIS
     
     leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
 
@@ -286,8 +287,19 @@ def leaguepage(leaguename):
 
     usermatchups.sort(key=operator.itemgetter('week'))
 
-    print(usermatchups)
-    return render_template("league.html", lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
+    thisweekscats = []
+
+    catstemp = db.execute("SELECT Cat1, Cat2, Cat3, Cat4, Cat5 FROM weeks WHERE weekid = ?", weeknum)[0]
+
+    thisweekscats.append({'catname': decodecatcode(catstemp['Cat1'])})
+    thisweekscats.append({'catname': decodecatcode(catstemp['Cat2'])})
+    thisweekscats.append({'catname': decodecatcode(catstemp['Cat3'])})
+    thisweekscats.append({'catname': decodecatcode(catstemp['Cat4'])})
+    thisweekscats.append({'catname': decodecatcode(catstemp['Cat5'])})
+
+    weekname = db.execute("SELECT weekName FROM weeks WHERE weekid = ?", weeknum)[0]['weekName']
+    print(weekname)
+    return render_template("league.html", thisweekscats = thisweekscats, weekname = weekname, lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
 
 
 @app.route("/team/<teamname>")

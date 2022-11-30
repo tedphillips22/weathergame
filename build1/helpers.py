@@ -3,6 +3,7 @@ import requests
 from cs50 import SQL
 from functools import wraps
 import config
+from re import findall
 
 db = config.db
 
@@ -137,3 +138,43 @@ def getteamsleagueinfo(teamid): #outputs dict of leaguenames for a given teamid
         leaguenames.append({'leaguename' : leaguename})
     
     return(leaguenames)
+
+def decodecatcode(catcode):
+    pcode = findall("\d+", catcode)
+
+    pname = db.execute("SELECT description FROM param_codes WHERE pcode = ?", pcode)[0]['description']
+
+    type = 'type'
+    MorL = 'MorL'
+    TorC = 'TorC'
+
+    catname = 'catname'
+
+    if "T" in catcode:
+        TorC = " as a team"
+    elif "C" in catcode:
+        TorC = " for a single city"
+
+    
+
+    if "R" in catcode:
+        if "M" in catcode:
+            catname = "Highest " + pname + TorC
+        elif "L" in catcode:
+            catname = "Lowest " + pname + TorC
+    
+    if "P" in catcode:
+        if "M" in catcode:
+            catname = "Furthest " + pname + " from prediction" + TorC
+        elif "L" in catcode:
+            catname = "Closest " + pname + " to prediction" + TorC
+    
+    if "A" in catcode:
+        if "M" in catcode:
+            catname = "Furthest " + pname + " from 20 year average" + TorC
+        elif "L" in catcode:
+            catname = "Closest " + pname + " to 20 year average" + TorC
+
+    return(catname) 
+
+ 
