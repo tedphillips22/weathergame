@@ -3,9 +3,9 @@ from re import findall
 from cs50 import SQL
 from getweatherdata import getaverage, getmeasurement
 import random
+import config
 
-
-db = SQL("sqlite:///weather.db")
+db = config.db
 
 def runmatchup(catcode, team1id, team2id):
 

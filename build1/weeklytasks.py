@@ -3,8 +3,9 @@ import getweatherdata as gwd
 from cs50 import SQL
 from datetime import datetime
 from seasontasks import getweeknum
+import config
 
-db = SQL("sqlite:///weather.db")
+db = config.db
 
 def main():
     now = datetime.now()

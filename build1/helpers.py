@@ -2,8 +2,9 @@ from flask import Flask, flash, redirect, render_template, request, session
 import requests
 from cs50 import SQL
 from functools import wraps
+import config
 
-db = SQL("sqlite:///weather.db")
+db = config.db
 
 def login_required(f):
     """

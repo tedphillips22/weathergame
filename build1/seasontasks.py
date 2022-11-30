@@ -2,6 +2,9 @@ import gamefunctions as gf
 import random
 from cs50 import SQL
 from datetime import date
+import config
+
+db = config.db
 
 #Clear out schedule table
 
@@ -20,7 +23,7 @@ def getweeknum():
 
 
 #Make the matchup schedule
-db = SQL("sqlite:///weather.db")
+
 
 def makeschedule(leagueid):
     teamsdict = db.execute("SELECT teamid FROM leaguemembers WHERE leagueid = ?", leagueid)

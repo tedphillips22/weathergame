@@ -1,8 +1,9 @@
 import requests
 from cs50 import SQL
 from datetime import date, timedelta
+import config
 
-db = SQL("sqlite:///weather.db")
+db = config.db
 
 def getpredictiondict(cityid): #fetches daily predictions for given city/pcode combination.
     lon = db.execute("SELECT lon FROM cities WHERE id = ?", cityid)[0]['lon']

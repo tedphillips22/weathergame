@@ -14,10 +14,11 @@ from helpers import (citycheck, get_current_weather, getleagueinfo,
                      getusersleaguenames, getusersleagueteamdicts,
                      getusersteamnames, login_required, message, namecheck)
 from seasontasks import getweeknum
+import config
 
 app = Flask(__name__)
 
-db = SQL("sqlite:///weather.db")
+db = config.db
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -164,9 +165,11 @@ def maketeam():
 def makeleague():
     if request.method == "POST":
         leaguename = request.form.get("leaguename")
-        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguename) 
-        if leaguecheck != 0:
-            return message("League name taken. Please try another name.", 1)
+
+        #Check for duplicate league names (currently not working)
+        # leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguename) 
+        # if leaguecheck != 0:
+        #     return message("League name taken. Please try another name.", 1)
 
         code = request.form.get("code")
 
