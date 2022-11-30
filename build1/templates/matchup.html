@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{team1name}} vs. {{team2name}}
+{% endblock %}
+
+{% block main %}
+    {% if winnername %}
+    <p>{{ winnername }} is the winner!</p>
+    {% else %}
+    <p> no winner yet :) </p>
+    {% endif %}
+{% endblock %}

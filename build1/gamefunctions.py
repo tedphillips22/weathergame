@@ -235,8 +235,6 @@ def scoreCmatchup(catcode, team1id, team2id, team1rawsums, team1compsums, team2r
         return("ERROR in scoreCmatchup")
 
 
-    
-
 
 
 

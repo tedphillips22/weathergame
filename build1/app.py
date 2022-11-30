@@ -300,7 +300,9 @@ def leaguepage(leaguename):
     thisweekscats.append({'catname': decodecatcode(catstemp['Cat5'])})
 
     weekname = db.execute("SELECT weekName FROM weeks WHERE weekid = ?", weeknum)[0]['weekName']
-    print(weekname)
+    
+
+
     return render_template("league.html", thisweekscats = thisweekscats, weekname = weekname, lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
 
 
@@ -332,3 +334,24 @@ def userpage(username):
     leaguenames = getusersleaguenames(pageid)
     
     return render_template("user.html", uusername = uusername, teamnames = teamnames, leaguenames = leaguenames)
+
+@app.route("/matchups/<matchupid>")
+@login_required
+def matchuppage(matchupid):
+    userid = session["userid"]
+    weeknum = getweeknum()
+
+    matchupinfo = db.execute("SELECT * FROM matchups WHERE matchupid = ?", matchupid)
+
+    team1id = matchupinfo[0]['hometeamid']
+    team2id = matchupinfo[0]['awayteamid']
+    winnerid = matchupinfo[0]['winner']
+
+    team1name = db.execute("SELECT teamname FROM teams WHERE id = ?", team1id)[0]['teamname']
+    team2name = db.execute("SELECT teamname FROM teams WHERE id = ?", team2id)[0]['teamname']
+    if winnerid:
+        winnername = db.execute("SELECT teamname FROM teams WHERE id = ?", winnerid)[0]['teamname']
+    else:
+        winnername = None
+
+    return render_template("matchup.html", matchupinfo = matchupinfo, weeknum = weeknum, winnername = winnername, team1name = team1name, team2name = team2name)

@@ -82,9 +82,32 @@ def runleaguematchups(week):
     for matchup in matchups:
         team1id = matchup['hometeamid']
         team2id = matchup['awayteamid']
+        catwinners = []
+        winner = -1
+        team1count = 0
+        team2count = 0
+        catcount = 1
         for catcode in catlist:
-            winner = gf.runmatchup(catcode, team1id, team1id)
-            db.execute("UPDATE matchups SET winner = ? WHERE week = ? AND hometeamid = ? AND awayteamid = ?", winner, week, team1id, team2id)
+            catwinner = gf.runmatchup(catcode, team1id, team2id)
+            catwinners.append({catcode: catwinner})
+            db.execute("UDPATE matchups SET winner"+catcount+" = ? WHERE week = ? AND hometeamid = ? AND awayteamid = ?", catwinner, week, team1id, team2id)
+            catcount += 1
+            
+        for row in catwinners:
+            catwinner = dict.values(row)
+            if catwinner == team1id:
+                team1count += 1
+            elif catwinner == team2id:
+                team2count +=1
+        if team1count >> team2count:
+            winner = team1id
+        elif team2count >> team1count:
+            winner = team2id
+        elif team1count == team2count:
+            winner = 'Tie'
+        
+        db.execute("UPDATE matchups SET winner = ? WHERE week = ? AND hometeamid = ? AND awayteamid = ?", winner, week, team1id, team2id)
+
 
     return()
 

@@ -1,3 +1,3 @@
-import helpers
+import weeklytasks
 
-helpers.decodecatcode("6ALC")
+weeklytasks.runleaguematchups()
