@@ -128,7 +128,8 @@ def maketeam():
         
         teamname = request.form.get("teamname")
         
-        if db.execute("SELECT count(*) FROM teams WHERE teamname LIKE ?", teamname) != 0:
+        #Check for duplicate teamname
+        if db.execute("SELECT count(*) FROM teams WHERE teamname LIKE ?", teamname)[0]['count(*)'] != 0:
             return message("Team name taken. Please try again.", 1)
         
         userid = session["userid"]
@@ -168,9 +169,9 @@ def makeleague():
         leaguename = request.form.get("leaguename")
 
         #Check for duplicate league names (currently not working)
-        # leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguename) 
-        # if leaguecheck != 0:
-        #     return message("League name taken. Please try another name.", 1)
+        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['count(*)'] 
+        if leaguecheck != 0:
+            return message("League name taken. Please try another name.", 1)
 
         code = request.form.get("code")
 
@@ -193,13 +194,14 @@ def joinleague():
         leaguegiven = request.form.get("leaguename")
 
         #check if leaguename provided by user exists
-        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguegiven) 
+        leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]['count(*)']
+        print(leaguecheck)
         if leaguecheck == 0:
             return message("League not found", 1)
 
         leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]["id"]
 
-        membercheck = db.execute("SELECT count(*) FROM leaguemembers WHERE userid = (?) AND leagueid = (?)", userid, leagueid)
+        membercheck = db.execute("SELECT count(*) FROM leaguemembers WHERE userid = (?) AND leagueid = (?)", userid, leagueid)[0]['count(*)']
         if membercheck != 0:
             return message("Can't join a league more than once.", 1)
 
