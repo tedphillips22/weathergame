@@ -1,5 +1,6 @@
 -decode catcode
 -scoreboard
+-display relevant data values (new db table with matchup keyval)
 
 
 -git access for pythonanywhere

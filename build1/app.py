@@ -177,7 +177,7 @@ def makeleague():
 
         userid = session["userid"]
 
-        db.execute("INSERT INTO leagues (leaguename, founderid, code) VALUES (?, ?, ?)", leaguename, userid, code)
+        db.execute("INSERT INTO leagues (leaguename, founderid, code, active) VALUES (?, ?, ?, ?)", leaguename, userid, code, 1)
 
         return message('League called "{0}" created'.format(leaguename), 0)
 

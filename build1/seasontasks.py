@@ -3,6 +3,7 @@ import random
 from cs50 import SQL
 from datetime import date
 import config
+import math
 
 db = config.db
 
@@ -16,9 +17,13 @@ db = config.db
 #Set week0 manually
 week0 = date(2022, 12, 11) 
 
+def main():
+    setallmatchups()
+    return()
+
 def getweeknum():
     today = date.today()
-    weeknum = int((today - week0).days / 7)
+    weeknum = math.floor((today - week0).days / 7)
     return(weeknum)
 
 
@@ -77,5 +82,6 @@ def setallmatchups():
     for league in leagueids:
         leagueid = league['id']
         makeschedule(leagueid)
+    return()
 
-
+main()
