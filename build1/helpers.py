@@ -131,11 +131,15 @@ def getteamcitiesweather(teamid): #outputs dict with city_state names and curren
 
 def getteamsleagueinfo(teamid): #outputs dict of leaguenames for a given teamid
     leagueids = db.execute("SELECT leagueid FROM leaguemembers WHERE teamid = ?", teamid)
+    print(leagueids)
     counter = 0
     leaguenames = []
     for row in leagueids:
         leaguename = db.execute("SELECT leaguename FROM leagues WHERE id = ?", leagueids[counter]['leagueid'])[0]['leaguename']
         leaguenames.append({'leaguename' : leaguename})
+        counter += 1
+    
+    print(leaguenames)
     
     return(leaguenames)
 

@@ -70,7 +70,7 @@ def makeschedule(leagueid):
             awayteamid = matchup[1]
             if awayteamid == 'None':
                 awayteamid = 0
-            print(hometeamid, awayteamid)
+            
             db.execute("INSERT INTO matchups (leagueid, week, hometeamid, awayteamid) VALUES (?,?,?,?)", leagueid, week, hometeamid, awayteamid)
     
     return()

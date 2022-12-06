@@ -195,7 +195,7 @@ def joinleague():
 
         #check if leaguename provided by user exists
         leaguecheck = db.execute("SELECT count(*) FROM leagues WHERE leaguename LIKE (?)", leaguegiven)[0]['count(*)']
-        print(leaguecheck)
+        
         if leaguecheck == 0:
             return message("League not found", 1)
 
@@ -214,10 +214,10 @@ def joinleague():
 
         
         teamname = request.form.get("teamname")
-        print(teamname)
+        
         teamiddict = db.execute("SELECT id FROM teams WHERE teamname = (?) AND userid = (?)", teamname, userid)
 
-        print(teamiddict)
+        
 
         teamid = teamiddict[0]['id']
 
@@ -250,7 +250,7 @@ def myleagues():
 @app.route("/league/<leaguename>")
 @login_required
 def leaguepage(leaguename):
-    weeknum = 4 #getweeknum() #FIX THIS
+    weeknum = 0 #getweeknum() #FIX THIS
     
     leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
 
@@ -259,7 +259,7 @@ def leaguepage(leaguename):
     leaguelist = getleagueinfo(leagueid)
 
     matchuplist = db.execute("SELECT hometeamid, awayteamid FROM matchups WHERE leagueid = ? and week = ?", leagueid, weeknum)
-    
+    print(matchuplist)
     matchups = []
 
     for row in matchuplist:
@@ -268,6 +268,8 @@ def leaguepage(leaguename):
         homename = db.execute("SELECT teamname FROM teams WHERE id = ?", homeid)[0]['teamname']
         awayname = db.execute("SELECT teamname FROM teams WHERE id = ?", awayid)[0]['teamname']
         matchups.append({'home': homename, 'away': awayname})
+
+    
 
     userid = session["userid"]
     userhomegames = db.execute("SELECT week, awayteamid FROM matchups WHERE leagueid = ? and hometeamid = ?", leagueid, userid)
@@ -301,9 +303,32 @@ def leaguepage(leaguename):
 
     weekname = db.execute("SELECT weekName FROM weeks WHERE weekid = ?", weeknum)[0]['weekName']
     
+    resultsraw = db.execute("SELECT hometeamid, awayteamid, winner FROM matchups WHERE leagueid = ? AND week = ?", leagueid, weeknum)
+    results = []
+    for row in resultsraw:
+        hometeamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['hometeamid'])
+        awayteamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['awayteamid'])
+        winnername = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['winner'])
+        results.append({'hometeamname':hometeamname, 'awayteamname':awayteamname, 'winnername':winnername})
 
+    winslosses = []
 
-    return render_template("league.html", thisweekscats = thisweekscats, weekname = weekname, lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
+    for team in leaguelist:
+        teamname = team['teamname']
+        owner = team['username']
+        wincount = 0
+        losscount = 0
+        for row in results:
+            if row['hometeamname'] == teamname or row['awayteamname'] == teamname:
+                if row['winnername'] == teamname:
+                    wincount += 1
+                else:
+                    losscount += 1
+            else:
+                continue
+        winslosses.append({'teamname':teamname, 'owner':owner, 'wins': wincount, 'losses': losscount})
+
+    return render_template("league.html", winslosses = winslosses, results = results, thisweekscats = thisweekscats, weekname = weekname, lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)
 
 
 @app.route("/team/<teamname>")

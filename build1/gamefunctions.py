@@ -31,7 +31,7 @@ def getmatchupdata(catcode, team1id, team2id): #accepts a category code and two 
     #get relevent weather data based on cat code and store in appropriate table
 
     if "A" in catcode:
-        print('caught A')
+        
         for x in team1cities:
             cityid1 = x['cityid']
             if db.execute("SELECT count(*) FROM averages WHERE cityid = ? AND date = ?", cityid1, today)[0]['count(*)'] != 0:
