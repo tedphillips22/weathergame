@@ -6,10 +6,11 @@ import requests
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from werkzeug.security import check_password_hash, generate_password_hash
+from flask_session import Session
 from urllib.parse import unquote
+import regex as re
 
 import gamefunctions as g
-from flask_session import Session
 from helpers import (citycheck, get_current_weather, getleagueinfo,
                      getteamcitiesweather, getteamsleagueinfo,
                      getusersleaguenames, getusersleagueteamdicts,
@@ -253,16 +254,18 @@ def myleagues():
 def leaguepage(leaguename):
     weeknum = getweeknum() 
 
+    print(leaguename)
     leaguename = unquote(leaguename)
-    
+    print(leaguename)
+
     leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
 
     lleaguename = db.execute("SELECT leaguename FROM leagues WHERE id = (?)", leagueid)[0]['leaguename']
 
     leaguelist = getleagueinfo(leagueid)
 
-    matchuplist = db.execute("SELECT hometeamid, awayteamid FROM matchups WHERE leagueid = ? and week = ?", leagueid, weeknum)
-    print(matchuplist)
+    matchuplist = db.execute("SELECT hometeamid, awayteamid FROM matchups WHERE leagueid = ? and week = ?", leagueid, weeknum) ##wtf is happening here??? inventing tons of nonexistent matchups
+    
     matchups = []
 
     for row in matchuplist:
