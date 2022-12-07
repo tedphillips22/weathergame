@@ -7,10 +7,6 @@
 -display relevant data values (new db table with matchup keyval)
 
 
-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
-
-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
-
 
 
 

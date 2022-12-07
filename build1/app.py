@@ -6,6 +6,7 @@ import requests
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from werkzeug.security import check_password_hash, generate_password_hash
+from urllib.parse import unquote
 
 import gamefunctions as g
 from flask_session import Session
@@ -250,7 +251,9 @@ def myleagues():
 @app.route("/league/<leaguename>")
 @login_required
 def leaguepage(leaguename):
-    weeknum = 0 #getweeknum() #FIX THIS
+    weeknum = getweeknum() 
+
+    leaguename = unquote(leaguename)
     
     leagueid = db.execute("SELECT id FROM leagues WHERE leaguename LIKE (?)", leaguename)[0]['id']
 
@@ -303,13 +306,15 @@ def leaguepage(leaguename):
 
     weekname = db.execute("SELECT weekName FROM weeks WHERE weekid = ?", weeknum)[0]['weekName']
     
-    resultsraw = db.execute("SELECT hometeamid, awayteamid, winner FROM matchups WHERE leagueid = ? AND week = ?", leagueid, weeknum)
+    resultsraw = db.execute("SELECT hometeamid, awayteamid, winner FROM matchups WHERE leagueid = ? AND week = ?", leagueid, weeknum - 1)
     results = []
-    for row in resultsraw:
-        hometeamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['hometeamid'])
-        awayteamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['awayteamid'])
-        winnername = db.execute("SELECT teamname FROM teams WHERE id = ?", row[0]['winner'])
-        results.append({'hometeamname':hometeamname, 'awayteamname':awayteamname, 'winnername':winnername})
+    
+    if len(resultsraw) != 0:
+        for row in resultsraw:
+            hometeamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row['hometeamid'])[0]['teamname']
+            awayteamname = db.execute("SELECT teamname FROM teams WHERE id = ?", row['awayteamid'])[0]['teamname']
+            winnername = db.execute("SELECT teamname FROM teams WHERE id = ?", row['winner'])[0]['teamname']
+            results.append({'hometeamname':hometeamname, 'awayteamname':awayteamname, 'winnername':winnername})
 
     winslosses = []
 
@@ -318,14 +323,15 @@ def leaguepage(leaguename):
         owner = team['username']
         wincount = 0
         losscount = 0
-        for row in results:
-            if row['hometeamname'] == teamname or row['awayteamname'] == teamname:
-                if row['winnername'] == teamname:
-                    wincount += 1
+        if len(results) != 0:
+            for row in results:
+                if row['hometeamname'] == teamname or row['awayteamname'] == teamname:
+                    if row['winnername'] == teamname:
+                        wincount += 1
+                    else:
+                        losscount += 1
                 else:
-                    losscount += 1
-            else:
-                continue
+                    continue
         winslosses.append({'teamname':teamname, 'owner':owner, 'wins': wincount, 'losses': losscount})
 
     return render_template("league.html", winslosses = winslosses, results = results, thisweekscats = thisweekscats, weekname = weekname, lleaguename = lleaguename, usermatchups = usermatchups, leaguelist = leaguelist, matchups = matchups)

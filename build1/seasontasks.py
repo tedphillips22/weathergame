@@ -23,6 +23,8 @@ def main():
 
 def getweeknum():
     today = date.today()
+    if today < week0:
+        return(0)
     weeknum = math.floor((today - week0).days / 7)
     return(weeknum)
 

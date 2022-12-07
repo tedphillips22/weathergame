@@ -1,3 +1,3 @@
-import weeklytasks
+import seasontasks
 
-weeklytasks.runleaguematchups()
+print(seasontasks.getweeknum())
